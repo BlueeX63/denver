@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Synergy Images Contact Sheet</title>
+<style>
+  body { font-family: system-ui, -apple-system, sans-serif; background: #0f172a; color: #f8fafc; margin: 0; padding: 24px; }
+  h1 { color: #fbae17; margin-bottom: 8px; }
+  p { color: #94a3b8; margin-bottom: 24px; font-size: 16px; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 20px; }
+  .card { background: #1e293b; border: 1px solid #334155; border-radius: 12px; overflow: hidden; display: flex; flex-direction: column; align-items: center; transition: transform 0.2s, border-color 0.2s; }
+  .card:hover { transform: translateY(-4px); border-color: #34d399; }
+  .card img { width: 100%; height: 180px; object-fit: cover; background: #000; }
+  .info { padding: 12px; text-align: center; width: 100%; box-sizing: border-box; }
+  .filename { font-family: monospace; font-size: 14px; font-weight: bold; color: #34d399; margin: 0; }
+</style>
+</head>
+<body>
+  <h1>📸 Synergyelectra Photo Contact Sheet</h1>
+  <p>Scroll through your 77 optimized photos below. Please tell me which image code (e.g. <b>DSC_9545.JPG</b>) is the Founder, which ones are Workers, and which ones go to Hero / Panels / Solar!</p>
+  <div class="grid" id="grid"></div>
+  <script>
+    const photos = [
+      "DSC_9528.JPG","DSC_9529.JPG","DSC_9530.JPG","DSC_9531.JPG","DSC_9532.JPG","DSC_9533.JPG","DSC_9534.JPG","DSC_9535.JPG","DSC_9536.JPG","DSC_9537.JPG","DSC_9538.JPG","DSC_9539.JPG","DSC_9540.JPG","DSC_9541.JPG","DSC_9542.JPG","DSC_9543.JPG","DSC_9544.JPG","DSC_9545.JPG","DSC_9546.JPG","DSC_9547.JPG","DSC_9548.JPG","DSC_9549.JPG","DSC_9550.JPG","DSC_9551.JPG","DSC_9552.JPG","DSC_9553.JPG","DSC_9554.JPG","DSC_9555.JPG","DSC_9556.JPG","DSC_9557.JPG","DSC_9558.JPG","DSC_9559.JPG","DSC_9560.JPG","DSC_9561.JPG","DSC_9562.JPG","DSC_9563.JPG","DSC_9564.JPG","DSC_9565.JPG","DSC_9566.JPG","DSC_9567.JPG","DSC_9568.JPG","DSC_9569.JPG","DSC_9570.JPG","DSC_9571.JPG","DSC_9572.JPG","DSC_9573.JPG","DSC_9574.JPG","DSC_9575.JPG","DSC_9576.JPG","DSC_9577.JPG","DSC_9583.JPG","DSC_9584.JPG","DSC_9585.JPG","DSC_9586.JPG","DSC_9587.JPG","DSC_9588.JPG","DSC_9589.JPG","DSC_9590.JPG","DSC_9591.JPG","DSC_9592.JPG","DSC_9593.JPG","DSC_9594.JPG","DSC_9595.JPG","DSC_9596.JPG","DSC_9597.JPG","DSC_9598.JPG","DSC_9599.JPG","DSC_9603.JPG","DSC_9604.JPG","DSC_9605.JPG","DSC_9606.JPG","DSC_9607.JPG","DSC_9608.JPG","DSC_9609.JPG","DSC_9610.JPG","DSC_9611.JPG","DSC_9612.JPG"
+    ];
+    const grid = document.getElementById('grid');
+    photos.forEach(p => {
+      const card = document.createElement('div');
+      card.className = 'card';
+      card.innerHTML = `<a href="/photos/${p}" target="_blank" style="width:100%; text-decoration:none;"><img src="/photos/${p}" loading="lazy" alt="${p}" /></a><div class="info"><p class="filename">${p}</p></div>`;
+      grid.appendChild(card);
+    });
+  </script>
+</body>
+</html>
