@@ -66,18 +66,13 @@ export default function Footer() {
                     <h3 className="text-lg font-bold text-white mb-2">Working Hours</h3>
 
                     <div className="flex flex-col gap-1">
-                        <span className="text-slate-400 text-sm">Monday – Saturday</span>
-                        <span className="font-bold text-sm">12:00 pm – 14:45 pm</span>
+                        <span className="text-slate-400 text-sm">Monday – Friday</span>
+                        <span className="font-bold text-sm">9:00 AM – 6:00 PM</span>
                     </div>
 
                     <div className="flex flex-col gap-1">
-                        <span className="text-slate-400 text-sm">Sunday – Thursday</span>
-                        <span className="font-bold text-sm">17.30 pm – 00.00 am</span>
-                    </div>
-
-                    <div className="flex flex-col gap-1">
-                        <span className="text-slate-400 text-sm">Friday – Saturday</span>
-                        <span className="font-bold text-sm">17.30 pm – 00.00 am</span>
+                        <span className="text-slate-400 text-sm">Saturday – Sunday</span>
+                        <span className="font-bold text-sm text-emerald-500">Off / Closed</span>
                     </div>
                 </div>
 

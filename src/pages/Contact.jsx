@@ -73,19 +73,19 @@ export default function Contact() {
     <div className="min-h-screen flex flex-col font-outfit bg-white selection:bg-emerald-500 selection:text-white text-slate-800">
       <SEO 
         title="Contact Us | Synergy Systems" 
-        description="Connect with our senior electrical audit desk for turnkey substation commissioning and solar EPC inquiries."
+        description="Connect with our senior electrical audit desk for comprehensive substation commissioning and solar EPC inquiries."
         url="https://www.denver.com/contact"
       />
-      {/* HERO SECTION */}
+      {/* HERO SECTION - Full Screen Height */}
       <div 
-        className="relative w-full overflow-hidden pt-6 pb-24 md:pb-32 bg-cover bg-center"
+        className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40"
         style={{ backgroundImage: `url('/photos/DSC_9528.JPG')` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/60"></div>
         
         <Navbar />
 
-        <div className="relative z-10 px-6 md:px-16 max-w-7xl mx-auto pt-24 md:pt-32 text-center md:text-left">
+        <div className="relative z-10 px-6 md:px-16 max-w-7xl mx-auto my-auto pt-24 pb-12 text-center md:text-left w-full">
           <div className="flex items-center justify-center md:justify-start gap-2 text-slate-300 text-xs md:text-sm mb-4 font-medium">
             <Link to="/" className="hover:text-emerald-400 transition-colors no-underline text-slate-300">Home</Link>
             <span className="text-emerald-500">/</span>
@@ -96,7 +96,7 @@ export default function Contact() {
             Contact Synergy Systems
           </h1>
           <p className="text-emerald-200 text-base md:text-xl max-w-2xl mt-2 mb-8 leading-relaxed font-normal m-0 mx-auto md:mx-0">
-            Connect directly with our senior electrical audit desk for turnkey substation commissioning, float/boost charger manufacturing, or commercial solar EPC inquiries.
+            Connect directly with our senior electrical audit desk for comprehensive substation commissioning, float/boost charger manufacturing, or commercial solar EPC inquiries.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -105,6 +105,15 @@ export default function Contact() {
               <span>Corporate Engineering Desk</span>
             </div>
           </div>
+        </div>
+
+        {/* Bottom Hero Indicator Strip */}
+        <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-16 w-full pb-4 hidden md:flex items-center justify-between text-xs font-bold uppercase tracking-widest text-slate-400 border-t border-slate-800/80 pt-4">
+          <span>Greater Noida HQ & Plant</span>
+          <span>•</span>
+          <span>Rapid Engineering Support</span>
+          <span>•</span>
+          <span>National Dispatch Network</span>
         </div>
       </div>
 
@@ -203,7 +212,7 @@ export default function Contact() {
         <div className="lg:col-span-5 space-y-6 lg:sticky lg:top-32">
           <div className="rounded-md overflow-hidden border border-slate-200 shadow-xl bg-slate-100 aspect-[4/4]">
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14044.029192683527!2d77.53956876866758!3d28.35862896304431!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390cc75cd5f393d7%3A0xe6ae70064e15e731!2sSector%2017A%2C%20Gautam%20Buddha%20Nagar%2C%20Uttar%20Pradesh%20203201!5e0!3m2!1sen!2sin!4v1775987909400!5m2!1sen!2sin"
+              src="https://maps.google.com/maps?q=D%20211,%20SURAJPUR%20SITE%205,%20KASNA,%20GREATER%20NOIDA%20UP%20201312&t=&z=14&ie=UTF8&iwloc=&output=embed"
               className="w-full h-full"
               style={{ border: 0 }}
               loading="lazy"

@@ -20,7 +20,7 @@ export default function BatteryChargerSolarPanel() {
   ];
 
   const applications = [
-    'Turnkey Commercial Factory Rooftop Parks',
+    'Comprehensive Commercial Factory Rooftop Parks',
     'Ground-Mounted Megawatt Utility Farms',
     'Solar Online UPS Hybrid Plant Integration',
     'Off-Grid Industrial Captive Power Hubs'

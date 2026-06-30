@@ -128,7 +128,7 @@ export default function Blog() {
                   </h3>
 
                   <p className="text-gray-600 mb-4 text-sm leading-relaxed">
-                    Explore expert engineering standards, facility telematics insights, and turnkey power contract benchmarks.
+                    Explore expert engineering standards, facility telematics insights, and comprehensive power contract benchmarks.
                   </p>
 
                   <button className="flex items-center gap-2 font-medium text-gray-900 group-hover:text-green-500 transition">

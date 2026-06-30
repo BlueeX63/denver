@@ -31,7 +31,7 @@ const slides = [
     },
     {
         id: 3,
-        title: "Turnkey Industrial\nSwitchboards & Power",
+        title: "Comprehensive Electrical\nPower & Automation",
         subtitle: "35+ YEARS OF ENGINEERING EXCELLENCE",
         image: "/photos/DSC_9607.JPG",
         linkText: "Explore Panels",
@@ -56,14 +56,14 @@ export default function Home() {
         <div className="bg-white">
             <SEO 
               title="Denver | Power Electronics & Solar Solutions" 
-              description="Discover Denver's visionary leadership in high-yield solar arrays, turnkey industrial switchboards, and power electronics."
+              description="Discover Denver's visionary leadership in high-yield solar arrays, comprehensive industrial switchboards, and power electronics."
               url="https://www.denver.com/"
             />
-            {/* Hero Section */}
-            <div className="relative w-full overflow-hidden bg-slate-900">
+            {/* Hero Section - Full Screen Height */}
+            <div className="relative w-full min-h-screen flex flex-col overflow-hidden bg-slate-900">
                 <Navbar />
 
-                <div className="w-full min-h-[650px] md:h-[85vh] relative">
+                <div className="w-full flex-1 relative min-h-[650px]">
                     {slides.map((slide, index) => (
                         <div
                             key={slide.id}

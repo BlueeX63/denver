@@ -6,7 +6,7 @@ export default function SolarUPS3_1() {
   const specifications = [
     { label: 'Capacity Rating', value: '10kVA / 15kVA / 20kVA / 30kVA / 40kVA / 50kVA' },
     { label: 'Input Phase Architecture', value: '3-Phase, 4-Wire + Earth (340V - 460V AC Wide Tolerance)' },
-    { label: 'Output Phase Voltage', value: '1-Phase, 2-Wire + Earth (220V / 230V / 240V ±1%)' },
+    { label: 'Output Phase Voltage', value: 'Single Phase Pure Sine Wave (220V / 230V / 240V ±1%)' },
     { label: 'Conversion Configuration', value: 'True Online Double Conversion (3-Phase AC in, 1-Phase AC out)' },
     { label: 'System Operating Efficiency', value: '>94% (Solar MPPT Mode), >91% (AC Double Conversion)' },
     { label: 'Input Power Factor', value: '>0.99 Active Power Factor Correction (APFC inbuilt)' },
@@ -30,12 +30,12 @@ export default function SolarUPS3_1() {
     },
     {
       title: 'Wide Input Voltage Tolerance',
-      description: 'Operates smoothly across severe grid voltage fluctuations (340V-460V) without discharging battery banks.',
+      description: 'Operates smoothly across severe grid voltage fluctuations (340V-460V) without unnecessarily discharging battery banks.',
       icon: <ShieldCheck size={32} />
     },
     {
       title: 'Direct Solar DC Bus Injection',
-      description: 'High-power MPPT solar charge controllers feed directly into the central DC bus to take load priority over the grid.',
+      description: 'High-power MPPT solar charge controllers feed directly into the central DC bus to take load priority over utility grid supply.',
       icon: <Sun size={32} />
     },
     {
@@ -45,21 +45,21 @@ export default function SolarUPS3_1() {
     },
     {
       title: 'Smart Phase Failure Protection',
-      description: 'Automatic bypass isolation and instant alarm alerting upon utility phase loss or incorrect phase sequencing.',
+      description: 'Automatic bypass isolation and instant visual alarms alert operators upon utility phase loss or incorrect phase sequencing.',
       icon: <Sliders size={32} />
     }
   ];
 
   const whyChoose = [
-    { title: 'Utility Grid Transformer Optimization', description: 'Eliminates unbalanced single-phase loading on factory utility transformers, meeting electricity board compliance.' },
-    { title: 'Industrial Grade Components', description: 'Manufactured with high short-circuit withstand copper bus bars and heavy-duty structural enclosures.' },
-    { title: 'Proven Corporate Legacy', description: 'Over 35+ years of engineering experience executing precision electrical infrastructure for commercial & industrial giants.' },
+    { title: 'Utility Grid Transformer Optimization', description: 'Eliminates unbalanced single-phase loading on factory utility transformers, meeting electricity board compliance standards.' },
+    { title: 'Industrial Grade Components', description: 'Manufactured with high short-circuit withstand copper bus bars and heavy-duty structural sheet metal enclosures.' },
+    { title: '35+ Years Engineering Legacy', description: 'Over three decades of engineering experience executing precision electrical infrastructure for commercial & industrial giants.' },
     { title: 'Custom Battery Autonomy Sizing', description: 'Tailored backup calculations and bespoke solar mounting structures engineered specifically for your site layout.' }
   ];
 
   const howItWorks = [
     { title: '3-Phase AC Rectification', description: 'Incoming utility AC power across all three phases is rectified into a tightly regulated central DC bus.' },
-    { title: 'Solar DC Supplementation', description: 'Daytime solar panels feed renewable wattage directly into the central DC bus, slashes grid consumption.' },
+    { title: 'Solar DC Supplementation', description: 'Daytime solar panels feed renewable wattage directly into the central DC bus, drastically slashing grid consumption.' },
     { title: 'Single-Phase Inversion', description: 'Advanced IGBT inverter converts the DC bus into pristine 230V single-phase pure sine wave AC power.' },
     { title: 'Zero-Delay Bypass Failover', description: 'Inbuilt static bypass switch provides instantaneous failover during extreme overloads or routine servicing.' }
   ];
@@ -76,21 +76,21 @@ export default function SolarUPS3_1() {
   ];
 
   const productImages = [
+    "/photos/ai_solar_ups.png",
+    "/photos/ai_online_ups.png",
     "/photos/DSC_9534.JPG",
-    "/photos/DSC_9528.JPG",
-    "/photos/DSC_9594.JPG",
-    "/photos/DSC_9537.JPG"
+    "/photos/DSC_9528.JPG"
   ];
 
   return (
     <SolarUPSDetailLayout
-      breadcrumb="Solar Online UPS 3-1 Ph"
-      title="Solar Online UPS 3-1 PH"
-      headline="Balanced Industrial Input, Clean Output: Solar Online UPS 3-1 Ph"
-      intro="Solve utility grid phase imbalance while delivering pristine single-phase power to your sensitive equipment. Synergy Systems’s Solar Online UPS 3-1 Ph ingests 3-Phase AC power from the utility grid or solar arrays and delivers perfectly regulated 1-Phase pure sine wave output. This configuration is the gold standard for commercial buildings, medical imaging suites, banking corporate hubs, and medium industrial plants requiring balanced three-phase draw on the input side."
+      breadcrumb="Online & Industrial UPS 3-1 Ph"
+      title="Online & Industrial UPS 3-1 PH"
+      headline="Balanced Industrial Input, Clean Output: Online & Industrial UPS 3-1 Ph"
+      intro="Solve utility grid phase imbalance while delivering pristine single-phase power to your sensitive equipment. Synergy Systems’s Online & Industrial UPS 3-1 Ph ingests 3-Phase AC power from the utility grid or solar arrays and delivers perfectly regulated 1-Phase pure sine wave output. This configuration is the gold standard for commercial buildings, medical imaging suites, banking corporate hubs, and medium industrial plants requiring balanced three-phase draw on the input side with zero transfer delay (0s)."
       specifications={specifications}
       features={features}
-      seamlessTransfer="Zero transfer time (0ms delay) switching between 3-phase utility grid power, solar photovoltaic bus, and battery storage."
+      seamlessTransfer="Zero transfer time (0s delay) switching between 3-phase utility grid power, solar photovoltaic bus, and battery storage."
       whyChoose={whyChoose}
       howItWorks={howItWorks}
       applications={applications}

@@ -5,13 +5,13 @@ export default function ServicesSection() {
     const services = [
         {
             icon: ShieldCheck,
-            title: "Turnkey Industrial\nLT & PCC Panels",
+            title: "Comprehensive Industrial\nLT & PCC Panels",
             description: "Custom designed Power Control Centres and Low Tension boards built to IS 8623 with 50kA short-circuit withstand capacity."
         },
         {
             icon: Zap,
             title: "True Online Double\nConversion UPS",
-            description: "Zero-millisecond transfer time industrial inverters with DSP control, pure sine wave output, and galvanic isolation."
+            description: "Zero-delay (0s) transfer time industrial inverters with DSP control, pure sine wave output, and galvanic isolation."
         },
         {
             icon: BatteryCharging,
@@ -21,7 +21,7 @@ export default function ServicesSection() {
         {
             icon: Home,
             title: "Utility-Scale Solar\nEPC & Arrays",
-            description: "Complete turnkey solar plant installations backed by 25-year linear performance warranties and grid sync."
+            description: "Comprehensive solar plant installations backed by 25-year linear performance warranties and grid sync."
         },
         {
             icon: Car,
@@ -47,7 +47,7 @@ export default function ServicesSection() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight max-w-3xl">
-                        Turnkey Industrial Power &<br />Switchboard Infrastructure
+                        Comprehensive Industrial Power &<br />Switchboard Infrastructure
                     </h2>
                 </div>
 

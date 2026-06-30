@@ -28,7 +28,7 @@ export default function SustainableTravelSection() {
                     </h2>
 
                     <p className="text-slate-300 text-[15px] leading-relaxed mb-12">
-                        For over 25 years, Synergy Systems has engineered mission-critical electrical infrastructure, turnkey low-tension panels, and pure sine wave power systems with zero dielectric compromise.
+                        For over 25 years, Synergy Systems has engineered mission-critical electrical infrastructure, comprehensive low-tension panels, and pure sine wave power systems with zero dielectric compromise.
                     </p>
 
                     {/* Progress Bars */}
@@ -47,7 +47,7 @@ export default function SustainableTravelSection() {
                         {/* Progress Bar 2 */}
                         <div>
                             <div className="flex justify-between items-center mb-3">
-                                <span className="font-bold text-sm tracking-wide text-slate-200">On-Time Turnkey Commissioning</span>
+                                <span className="font-bold text-sm tracking-wide text-slate-200">On-Time Comprehensive Commissioning</span>
                                 <span className="font-bold text-sm tracking-wide text-emerald-400">98 %</span>
                             </div>
                             <div className="w-full h-2 bg-slate-800 rounded-full overflow-hidden border border-slate-700">

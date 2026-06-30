@@ -73,7 +73,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 <div class="footer">
   <strong style="color:#0f172a;">SYNERGY SYSTEMS POWER SOLUTIONS</strong><br>
   Powering Industries. Enabling Sustainability. Engineering the Future.<br>
-  Turnkey Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
+  Comprehensive Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
 </div>
 </body>
 </html>`;
@@ -606,7 +606,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
             Ready to Upgrade Your Power Infrastructure?
           </h3>
           <p className="text-slate-300 text-lg">
-            Consult with Synergy Systems's technical experts for turnkey site survey, N+X redundancy planning, and custom solar integration.
+            Consult with Synergy Systems's technical experts for comprehensive site survey, N+X redundancy planning, and custom solar integration.
           </p>
           <div className="pt-4 flex flex-wrap justify-center gap-4">
             <button 

@@ -43,12 +43,12 @@ export default function Service() {
       answer: "All our LT panels, PCC, MCC, and distribution boards are CPRI type-tested and built strictly to IS 8623 / IEC 61439 industrial benchmarks."
     },
     {
-      question: "Do you offer turnkey installation for industrial solar plants?",
+      question: "Do you offer complete installation for industrial solar plants?",
       answer: "Yes! We handle end-to-end solar EPC including site load analysis, custom CAD structure modeling, MMS fabrication, and grid synchronization."
     },
     {
       question: "What is the transfer time on your Solar Online UPS systems?",
-      answer: "Our true online double-conversion UPS units feature true 0ms (zero millisecond) transfer time, ensuring continuous pure sine wave backup."
+      answer: "Our true online double-conversion UPS units feature true 0s (zero millisecond) transfer time, ensuring continuous pure sine wave backup."
     },
     {
       question: "Can your mounting structures withstand severe storm weather?",
@@ -78,7 +78,7 @@ export default function Service() {
     },
     { 
       name: "Site Commissioning Team", 
-      role: "Turnkey Installation Experts",
+      role: "complete installation Experts",
       image: "/photos/DSC_9605.JPG"
     }
   ];
@@ -86,7 +86,7 @@ export default function Service() {
   const testimonials = [
     "Synergy Systems commissioned our entire 415V PCC and LT panel setup for our manufacturing facility. Zero downtime over 5 years of heavy continuous operation!",
     "Their 1+1+1 parallel redundant Solar UPS powers our critical ICU telemetry without a single millisecond of voltage drop. Truly unmatched reliability.",
-    "The turnkey solar plant installation was flawless. The MMS structures survived last season's severe coastal cyclones effortlessly. Highly recommended engineering team.",
+    "The comprehensive solar plant installation was flawless. The MMS structures survived last season's severe coastal cyclones effortlessly. Highly recommended engineering team.",
     "Exceptional field support and CPRI certified safety documentation. Synergy Systems has been our trusted electrical infrastructure partner for over a decade."
   ];
 
@@ -94,7 +94,7 @@ export default function Service() {
     <div className="min-h-screen flex flex-col font-outfit">
       <SEO 
         title="Our Services | Synergy Systems" 
-        description="Explore our end-to-end turnkey solutions: LT/PCC panels, solar installations, and zero-millisecond solar online UPS systems."
+        description="Explore our end-to-end Comprehensive Solutions: LT/PCC panels, solar installations, and zero-millisecond solar online UPS systems."
         url="https://www.denver.com/service"
       />
       <Navbar />

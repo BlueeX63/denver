@@ -72,7 +72,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 <div class="footer">
   <strong style="color:#0f172a;">SYNERGY SYSTEMS POWER SOLUTIONS</strong><br>
   Powering Industries. Enabling Sustainability. Engineering the Future.<br>
-  Turnkey Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
+  Comprehensive Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
 </div>
 </body>
 </html>`;
@@ -481,7 +481,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               Trusted 35+ Years Engineering Legacy
             </h3>
             <p className="text-slate-300 text-base md:text-lg leading-relaxed m-0">
-              Synergy Systems has built a national reputation for technical excellence, premium manufacturing standards, and successful execution of complex industrial projects across sectors. We are not merely equipment assemblers — we are comprehensive power solution providers offering turnkey design, manufacturing, integration, and lifetime service support.
+              Synergy Systems has built a national reputation for technical excellence, premium manufacturing standards, and successful execution of complex industrial projects across sectors. We are not merely equipment assemblers — we are comprehensive power solution providers offering Comprehensive Design, manufacturing, integration, and lifetime service support.
             </p>
             <div className="flex flex-wrap gap-6 pt-2">
               <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm">

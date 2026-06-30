@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ChevronDown, ChevronUp, Factory, ShieldCheck, Zap } from 'lucide-react';
 
 export default function AboutSection() {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(null);
 
     const features = [
         {
@@ -10,7 +10,7 @@ export default function AboutSection() {
             content: "With over 35 years of engineering expertise, Synergy Systems operates advanced ISO 9001:2015 manufacturing facilities. We combine seasoned engineering talent with automated assembly to produce CPRI-tested electrical boards and power systems."
         },
         {
-            title: "2. Turnkey Power Infrastructure",
+            title: "2. Comprehensive Power Infrastructure",
             content: "We are not merely equipment suppliers — we deliver complete load auditing, custom CAD electrical engineering, fabrication, site commissioning, and lifetime field telematics support."
         },
         {
@@ -65,7 +65,7 @@ export default function AboutSection() {
                     </h2>
 
                     <p className="text-slate-600 text-sm md:text-base mb-8 leading-relaxed font-normal">
-                        In today’s rapidly advancing industrial landscape, reliable power infrastructure is foundational. Synergy Systems stands as a benchmark in electrical engineering, turnkey panel manufacturing, industrial battery chargers, and high-yield solar infrastructures.
+                        In today’s rapidly advancing industrial landscape, reliable power infrastructure is foundational. Synergy Systems stands as a benchmark in electrical engineering, comprehensive panel manufacturing, industrial battery chargers, and high-yield solar infrastructures.
                     </p>
 
                     {/* Accordion Features */}

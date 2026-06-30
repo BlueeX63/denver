@@ -7,7 +7,7 @@ export default function PanelsAPFC() {
     { label: 'Power Factor Target Accuracy', value: '0.99 Lagging to Unity (Programmable)' },
     { label: 'Capacitor Switching Mechanism', value: 'Thyristor Zero-Crossing / Capacitor Contactors' },
     { label: 'Harmonic Detuned Reactors', value: 'Integrated 7% / 14% Copper Finned Reactors' },
-    { label: 'Dynamic Response Time', value: '<20ms Instantaneous Thyristor Switching' },
+    { label: 'Dynamic Response Time', value: '<20s Instantaneous Thyristor Switching' },
     { label: 'Capacitor Dielectric Type', value: 'Heavy Duty MPP Cylindrical / Square Gas-Filled' },
     { label: 'Controller Standard', value: '12 / 16 Stage Intelligent Microprocessor Relay' }
   ];

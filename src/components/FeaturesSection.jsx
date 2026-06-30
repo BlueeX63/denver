@@ -65,7 +65,7 @@ export default function FeaturesSection() {
                             <div className="w-20 h-20 rounded-full bg-emerald-500 flex items-center justify-center mb-6 text-white group-hover:scale-110 transition-transform duration-300 shadow-lg shadow-emerald-500/30">
                                 <Network size={32} strokeWidth={2} />
                             </div>
-                            <h3 className="text-2xl font-bold text-slate-900 mb-4">True 0ms Online UPS</h3>
+                            <h3 className="text-2xl font-bold text-slate-900 mb-4">True 0s Online UPS</h3>
                             <p className="text-slate-500 leading-relaxed text-[15px]">
                                 Double conversion inverter architecture delivers continuous pure sine wave power without a single millisecond of voltage drop.
                             </p>

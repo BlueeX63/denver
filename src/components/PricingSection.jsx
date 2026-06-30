@@ -16,9 +16,9 @@ export default function PricingSection() {
             ]
         },
         {
-            name: "Turnkey Solar EPC",
+            name: "Complete Solar EPC",
             description: "End-to-end engineering, procurement, and construction of industrial solar installations.",
-            price: "Turnkey EPC",
+            price: "Complete EPC",
             features: [
                 "25-year linear generation warranty",
                 "180 km/h cyclone tested MMS",
@@ -31,7 +31,7 @@ export default function PricingSection() {
             description: "Zero-millisecond online UPS and heavy industrial substation battery chargers.",
             price: "EPC + AMC",
             features: [
-                "True 0ms double-conversion transfer",
+                "True 0s double-conversion transfer",
                 "DSP controlled pure sine wave output",
                 "Rugged float & boost charger profiles",
                 "24/7 on-site emergency field support"
@@ -52,7 +52,7 @@ export default function PricingSection() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 leading-tight max-w-3xl">
-                        Turnkey Industrial Engineering &<br />Power Contracting Tiers
+                        Comprehensive Industrial Engineering &<br />Power Contracting Tiers
                     </h2>
                 </div>
 

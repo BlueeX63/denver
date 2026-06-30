@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { ArrowRight, ArrowDown } from 'lucide-react';
 
 export default function FAQSection() {
-    const [openIndex, setOpenIndex] = useState(0);
+    const [openIndex, setOpenIndex] = useState(null);
 
     const faqs = [
         {
@@ -11,10 +11,10 @@ export default function FAQSection() {
         },
         {
             question: "What is the transfer time on Solar Online UPS units?",
-            answer: "Our true online double conversion inverters feature true 0ms (zero millisecond) transfer time, ensuring continuous pure sine wave power continuity."
+            answer: "Our true online double conversion inverters feature true 0s (zero millisecond) transfer time, ensuring continuous pure sine wave power continuity."
         },
         {
-            question: "Do you execute turnkey industrial solar plant EPC?",
+            question: "Do you execute comprehensive industrial solar plant EPC?",
             answer: "Yes! We handle complete end-to-end EPC contracts including site load telemetering, custom structural CAD modeling, MMS fabrication, and grid synchronization."
         },
         {

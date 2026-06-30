@@ -343,7 +343,7 @@ export default function Navbar() {
 
                                             {customSelectOpen && (
                                                 <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-md shadow-2xl z-[120] overflow-hidden py-1.5 animate-fadeIn">
-                                                    {['Solar Online UPS (1+1 / 3-3 PH)', 'LT / PCC / MCC Panels', 'Industrial Battery Chargers', 'Turnkey Plant Electrical Infra'].map((opt, oIdx) => (
+                                                    {['Solar Online UPS (1+1 / 3-3 PH)', 'LT / PCC / MCC Panels', 'Industrial Battery Chargers', 'Complete Plant Electrical Infra'].map((opt, oIdx) => (
                                                         <div 
                                                             key={oIdx}
                                                             onClick={() => {

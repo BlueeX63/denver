@@ -18,8 +18,8 @@ export default function About() {
       answer: "Every LT panel, PCC board, battery charger, and solar structure undergoes rigorous Factory Acceptance Testing (FAT). This includes CPRI certified high-voltage dielectric tests, continuous thermal run checks under load, and strict ISO 9001:2015 quality adherence."
     },
     {
-      question: "Do you provide turnkey installation and site electrical commissioning?",
-      answer: "Yes. We operate as end-to-end turnkey power contractors. Our engineering department executes site load auditing, CAD blueprinting, structural fabrication, cabling, site erection, and statutory safety licensing."
+      question: "Do you provide complete installation and site electrical commissioning?",
+      answer: "Yes. We operate as end-to-end comprehensive power contractors. Our engineering department executes site load auditing, CAD blueprinting, structural fabrication, cabling, site erection, and statutory safety licensing."
     },
     {
       question: "What industrial sectors and critical infrastructures do you serve?",
@@ -54,19 +54,19 @@ export default function About() {
     <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-800">
       <SEO 
         title="About Us | Synergy Systems" 
-        description="Learn about Synergy Systems, an ISO 9001:2015 certified manufacturer with 35+ years of engineering expertise, offering turnkey electrical manufacturing and automation solutions."
+        description="Learn about Synergy Systems, an ISO 9001:2015 certified manufacturer with 35+ years of engineering expertise, offering comprehensive electrical manufacturing and automation solutions."
         url="https://www.denver.com/about"
       />
-      {/* Hero Header Section */}
+      {/* Hero Header Section - Full Screen Height */}
       <div 
-        className="relative w-full overflow-hidden pt-6 pb-24 md:pb-32 bg-cover bg-center"
+        className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40"
         style={{ backgroundImage: `url('/photos/founder.JPG')` }}
       >
-        <div className="absolute inset-0 bg-gradient-to-r from-slate-950/90 via-slate-950/70 to-slate-900/40"></div>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/60"></div>
         
         <Navbar />
 
-        <div className="relative z-10 px-6 md:px-16 max-w-7xl mx-auto pt-24 md:pt-32 text-center md:text-left">
+        <div className="relative z-10 px-6 md:px-16 max-w-7xl mx-auto my-auto pt-24 pb-12 text-center md:text-left w-full">
           <div className="flex items-center justify-center md:justify-start gap-2 text-slate-300 text-xs md:text-sm mb-4 font-medium">
             <Link to="/" className="hover:text-emerald-400 transition-colors no-underline text-slate-300">Home</Link>
             <span className="text-emerald-500">/</span>
@@ -77,7 +77,7 @@ export default function About() {
             About Synergy Systems
           </h1>
           <p className="text-emerald-200 text-base md:text-xl max-w-2xl mt-2 mb-8 leading-relaxed font-normal m-0 mx-auto md:mx-0">
-            Powering Progress with Reliable Electrical & Automation Solutions Since 1990. Turnkey electrical manufacturing and infrastructure backed by 35+ years of engineering excellence.
+            Powering Progress with Reliable Electrical & Automation Solutions Since 1990. Comprehensive electrical manufacturing and infrastructure backed by 35+ years of engineering excellence.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -89,6 +89,15 @@ export default function About() {
               <span>ISO 9001:2015 Certified Plant</span>
             </div>
           </div>
+        </div>
+
+        {/* Bottom Hero Indicator Strip */}
+        <div className="relative z-20 max-w-7xl mx-auto px-6 md:px-16 w-full pb-4 hidden md:flex items-center justify-between text-xs font-bold uppercase tracking-widest text-slate-400 border-t border-slate-800/80 pt-4">
+          <span>Established 1990</span>
+          <span>•</span>
+          <span>50+ Skilled Professionals</span>
+          <span>•</span>
+          <span>Greater Noida Manufacturing Plant</span>
         </div>
       </div>
 
@@ -121,11 +130,11 @@ export default function About() {
             </h2>
 
             <p className="text-slate-600 text-sm md:text-base leading-relaxed m-0 font-normal">
-              In today’s rapidly advancing industrial landscape, reliable power infrastructure is not optional — it is foundational. Synergy Systems stands as a trusted leader in delivering turnkey electrical boards, commercial solar plants, and heavy-duty battery chargers.
+              In today’s rapidly advancing industrial landscape, reliable power infrastructure is not optional — it is foundational. Synergy Systems stands as a trusted leader in delivering comprehensive electrical boards, commercial solar plants, and heavy-duty battery chargers.
             </p>
 
             <p className="text-slate-600 text-sm md:text-base leading-relaxed m-0 font-normal">
-              We are not merely equipment manufacturers; we are comprehensive power solution architects offering custom CAD modeling, plant load analysis, automated fabrication, turnkey site installation, and lifetime field telematics support.
+              We are not merely equipment manufacturers; we are comprehensive power solution architects offering custom CAD modeling, plant load analysis, automated fabrication, comprehensive site installation, and lifetime field telematics support.
             </p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-2">
@@ -157,7 +166,7 @@ export default function About() {
               <div className="absolute bottom-6 left-6 right-6 text-left space-y-1">
                 <span className="text-emerald-400 font-bold text-xs uppercase tracking-widest block">Managing Director & Founder</span>
                 <span className="text-2xl font-black text-white block">Visionary Leadership</span>
-                <p className="text-xs text-slate-300 m-0 pt-1 font-light">Architecting turnkey power infrastructure across India.</p>
+                <p className="text-xs text-slate-300 m-0 pt-1 font-light">Architecting comprehensive power infrastructure across India.</p>
               </div>
             </div>
           </div>
@@ -317,12 +326,12 @@ export default function About() {
         </div>
       </section>
 
-      {/* Turnkey Consultation Footer CTA */}
+      {/* Consultation Footer CTA */}
       <section className="bg-[#072d1a] text-white pt-20 pb-44 border-t border-emerald-900">
         <div className="max-w-7xl mx-auto px-6 text-center space-y-6">
           <span className="text-[#FBAE17] text-xs font-bold uppercase tracking-widest block">Ready To Commission Your Facility?</span>
           <h3 className="text-3xl md:text-5xl font-black text-white m-0 max-w-3xl mx-auto tracking-tight">
-            Partner With Turnkey Electrical Specialists
+            Partner With Comprehensive Electrical Specialists
           </h3>
           <p className="text-emerald-200 text-sm md:text-base max-w-xl mx-auto leading-relaxed m-0 font-normal">
             Whether upgrading a 400kV substation switchyard or deploying a rooftop factory solar park, our senior engineers are ready to audit your electrical load.
