@@ -51,7 +51,7 @@ export default function SolarUPS3_3() {
   ];
 
   const whyChoose = [
-    { title: 'Trusted Industrial Powerhouse', description: 'Preferred power partner for India’s top manufacturing, steel, automobile, and pharmaceutical leaders (₹50+ Cr turnover).' },
+    { title: 'Trusted Industrial Powerhouse', description: 'Preferred power partner for India’s top manufacturing, steel, automobile, and pharmaceutical leaders (35+ Years Experience).' },
     { title: 'Turnkey Execution Capability', description: 'Flawless design, engineering, supply, installation, and commissioning of complex multi-megawatt power plants.' },
     { title: 'Lifecycle Cost Slash', description: 'High solar harvest and >96% operating efficiency drastically reduce monthly industrial maximum demand electricity bills.' },
     { title: 'Pan-India Service Network', description: 'Rapid AMC emergency dispatch and dedicated 24/7 technical engineering helpdesk guaranteeing zero production downtime.' }
@@ -87,7 +87,7 @@ export default function SolarUPS3_3() {
       breadcrumb="Solar Online UPS 3-3 Ph"
       title="Solar Online UPS 3-3 PH"
       headline="Heavy Industrial Powerhouse: Solar Online UPS 3-3 Ph"
-      intro="The ultimate uninterruptible power solution for heavy machinery, complete manufacturing plants, and large facility-wide power protection. Synergyelectra’s Solar Online UPS 3-3 Ph delivers robust 3-Phase input and 3-Phase output double-conversion power. Engineered to handle high starting inrush currents, motor loads, and complex industrial infrastructure, this high-capacity system merges multi-kilowatt solar generation with enterprise grid backup to power the future of sustainable industry."
+      intro="The ultimate uninterruptible power solution for heavy machinery, complete manufacturing plants, and large facility-wide power protection. Synergy Systems’s Solar Online UPS 3-3 Ph delivers robust 3-Phase input and 3-Phase output double-conversion power. Engineered to handle high starting inrush currents, motor loads, and complex industrial infrastructure, this high-capacity system merges multi-kilowatt solar generation with enterprise grid backup to power the future of sustainable industry."
       specifications={specifications}
       features={features}
       seamlessTransfer="Zero interruption (0ms switching delay) during failover transfer between 3-phase utility grid, commercial solar PV, and battery banks."

@@ -92,7 +92,7 @@ export default function Panels() {
   return (
     <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-800">
       <SEO 
-        title="Industrial Electrical Panels | Synergyelectra" 
+        title="Industrial Electrical Panels | Synergy Systems" 
         description="Explore our CPRI tested L.T. Panels, PCC, MCC, and Distribution Boards. Engineered for mission-critical plant safety and modular scalability."
         url="https://www.denver.com/panels"
       />
@@ -123,7 +123,7 @@ export default function Panels() {
             </a>
             <div className="flex items-center gap-2 text-emerald-300 text-xs uppercase tracking-widest font-bold px-4 py-3 bg-white/5 rounded-md border border-white/10">
               <Factory size={16} className="text-[#FBAE17]" />
-              <span>₹50+ Cr Annual Turnover Facility</span>
+              <span>35+ Years Engineering Legacy</span>
             </div>
           </div>
         </div>
@@ -214,7 +214,7 @@ export default function Panels() {
       <section className="bg-slate-900 text-white pt-20 pb-44 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-8 space-y-6">
-            <span className="text-[#FBAE17] text-xs font-bold uppercase tracking-wider block">Synergyelectra Turnkey Solutions</span>
+            <span className="text-[#FBAE17] text-xs font-bold uppercase tracking-wider block">Synergy Systems Turnkey Solutions</span>
             <h3 className="text-3xl md:text-4xl font-black text-white m-0 tracking-tight">
               Design, Manufacturing & Installation Under One Roof
             </h3>

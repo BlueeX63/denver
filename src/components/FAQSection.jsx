@@ -22,7 +22,7 @@ export default function FAQSection() {
             answer: "Absolutely. Our MMS frameworks are cyclone-tested up to 180 km/h wind speeds and hot-dip galvanized with 80+ micron zinc protection against corrosion."
         },
         {
-            question: "What industries rely on Synergyelectra infrastructure?",
+            question: "What industries rely on Synergy Systems infrastructure?",
             answer: "We partner with leading petrochemical refineries, hyperscale IT data centers, railway traction yards, textile mills, and commercial high-rise towers across India."
         },
         {

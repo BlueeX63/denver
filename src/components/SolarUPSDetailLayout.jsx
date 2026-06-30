@@ -61,7 +61,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 </head>
 <body>
 <div class="header">
-  <div class="turnover">₹50+ Cr Annual Turnover Facility • CPRI & IEC Certified</div>
+  <div class="turnover">35+ Years Engineering Legacy • CPRI & IEC Certified</div>
   <h1>${title}</h1>
   <p style="margin:0;color:#f1f5f9;font-size:15px;">${headline || intro || 'True Online Double-Conversion Power Backup'}</p>
   <div class="badge">OFFICIAL FACTORY SPECIFICATION SHEET</div>
@@ -71,7 +71,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
   ${specTableRows}
 </table>
 <div class="footer">
-  <strong style="color:#0f172a;">SYNERGYELECTRA POWER SOLUTIONS</strong><br>
+  <strong style="color:#0f172a;">SYNERGY SYSTEMS POWER SOLUTIONS</strong><br>
   Powering Industries. Enabling Sustainability. Engineering the Future.<br>
   Turnkey Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
 </div>
@@ -82,7 +82,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${title ? title.replace(/[^a-zA-Z0-9]/g, '_') : 'Synergyelectra_UPS'}_Technical_Datasheet.html`;
+    a.download = `${title ? title.replace(/[^a-zA-Z0-9]/g, '_') : 'Synergy Systems_UPS'}_Technical_Datasheet.html`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -133,7 +133,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
           <div className="w-3 h-3 bg-emerald-500 rounded-full animate-ping"></div>
           <div>
             <p className="text-sm font-bold text-emerald-400 m-0">Brochure Downloading...</p>
-            <p className="text-xs text-slate-300 m-0">Synergyelectra_Technical_Brochure.pdf (4.8 MB)</p>
+            <p className="text-xs text-slate-300 m-0">Synergy Systems_Technical_Brochure.pdf (4.8 MB)</p>
           </div>
         </div>
       )}
@@ -463,7 +463,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
           <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-6"></div>
           
           <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-            Today's industrial landscape demands <strong className="text-slate-900">uninterrupted power</strong> and <strong className="text-slate-900">sustainable energy</strong>. Synergyelectra’s <strong className="text-slate-900">{title}</strong> delivers both acting as a <span className="text-emerald-700 font-semibold">solar inverter and true online double conversion UPS</span> in one robust system. By combining <strong className="text-slate-800">solar generation, grid power, and battery backup</strong>, it guarantees zero-downtime continuous supply while drastically reducing utility electricity bills. With <strong className="text-slate-800">DSP-based design, high MPPT efficiency, and comprehensive industrial protections</strong>, this UPS is the perfect foundational power infrastructure for modern industries.
+            Today's industrial landscape demands <strong className="text-slate-900">uninterrupted power</strong> and <strong className="text-slate-900">sustainable energy</strong>. Synergy Systems’s <strong className="text-slate-900">{title}</strong> delivers both acting as a <span className="text-emerald-700 font-semibold">solar inverter and true online double conversion UPS</span> in one robust system. By combining <strong className="text-slate-800">solar generation, grid power, and battery backup</strong>, it guarantees zero-downtime continuous supply while drastically reducing utility electricity bills. With <strong className="text-slate-800">DSP-based design, high MPPT efficiency, and comprehensive industrial protections</strong>, this UPS is the perfect foundational power infrastructure for modern industries.
           </p>
         </div>
 
@@ -511,13 +511,13 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
         </div>
       </section>
 
-      {/* Section 4: 2-Column Grid (Why Choose Synergyelectra & How It Works) */}
+      {/* Section 4: 2-Column Grid (Why Choose Synergy Systems & How It Works) */}
       <section className="bg-slate-50 py-20 px-6 border-t border-slate-200/60">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
-          {/* Left: WHY CHOOSE SYNERGYELECTRA */}
+          {/* Left: WHY CHOOSE SYNERGY SYSTEMS */}
           <div>
             <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
-              WHY CHOOSE SYNERGYELECTRA?
+              WHY CHOOSE SYNERGY SYSTEMS?
             </h3>
             <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
 
@@ -606,7 +606,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
             Ready to Upgrade Your Power Infrastructure?
           </h3>
           <p className="text-slate-300 text-lg">
-            Consult with Synergyelectra's technical experts for turnkey site survey, N+X redundancy planning, and custom solar integration.
+            Consult with Synergy Systems's technical experts for turnkey site survey, N+X redundancy planning, and custom solar integration.
           </p>
           <div className="pt-4 flex flex-wrap justify-center gap-4">
             <button 

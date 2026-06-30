@@ -7,7 +7,7 @@ export default function SustainableTravelSection() {
             <div className="w-full md:w-1/2 h-[500px] md:h-auto">
                 <img
                     src="/photos/DSC_9599.JPG"
-                    alt="Synergyelectra Switchboard Wiring Specialists"
+                    alt="Synergy Systems Switchboard Wiring Specialists"
                     className="w-full h-full object-cover border-r-4 border-emerald-500"
                 />
             </div>
@@ -28,7 +28,7 @@ export default function SustainableTravelSection() {
                     </h2>
 
                     <p className="text-slate-300 text-[15px] leading-relaxed mb-12">
-                        For over 25 years, Synergyelectra has engineered mission-critical electrical infrastructure, turnkey low-tension panels, and pure sine wave power systems with zero dielectric compromise.
+                        For over 25 years, Synergy Systems has engineered mission-critical electrical infrastructure, turnkey low-tension panels, and pure sine wave power systems with zero dielectric compromise.
                     </p>
 
                     {/* Progress Bars */}

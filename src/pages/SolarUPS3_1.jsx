@@ -53,7 +53,7 @@ export default function SolarUPS3_1() {
   const whyChoose = [
     { title: 'Utility Grid Transformer Optimization', description: 'Eliminates unbalanced single-phase loading on factory utility transformers, meeting electricity board compliance.' },
     { title: 'Industrial Grade Components', description: 'Manufactured with high short-circuit withstand copper bus bars and heavy-duty structural enclosures.' },
-    { title: 'Proven Corporate Legacy', description: 'Over ₹50+ Crores annual turnover executing precision electrical infrastructure for commercial & industrial giants.' },
+    { title: 'Proven Corporate Legacy', description: 'Over 35+ years of engineering experience executing precision electrical infrastructure for commercial & industrial giants.' },
     { title: 'Custom Battery Autonomy Sizing', description: 'Tailored backup calculations and bespoke solar mounting structures engineered specifically for your site layout.' }
   ];
 
@@ -87,7 +87,7 @@ export default function SolarUPS3_1() {
       breadcrumb="Solar Online UPS 3-1 Ph"
       title="Solar Online UPS 3-1 PH"
       headline="Balanced Industrial Input, Clean Output: Solar Online UPS 3-1 Ph"
-      intro="Solve utility grid phase imbalance while delivering pristine single-phase power to your sensitive equipment. Synergyelectra’s Solar Online UPS 3-1 Ph ingests 3-Phase AC power from the utility grid or solar arrays and delivers perfectly regulated 1-Phase pure sine wave output. This configuration is the gold standard for commercial buildings, medical imaging suites, banking corporate hubs, and medium industrial plants requiring balanced three-phase draw on the input side."
+      intro="Solve utility grid phase imbalance while delivering pristine single-phase power to your sensitive equipment. Synergy Systems’s Solar Online UPS 3-1 Ph ingests 3-Phase AC power from the utility grid or solar arrays and delivers perfectly regulated 1-Phase pure sine wave output. This configuration is the gold standard for commercial buildings, medical imaging suites, banking corporate hubs, and medium industrial plants requiring balanced three-phase draw on the input side."
       specifications={specifications}
       features={features}
       seamlessTransfer="Zero transfer time (0ms delay) switching between 3-phase utility grid power, solar photovoltaic bus, and battery storage."

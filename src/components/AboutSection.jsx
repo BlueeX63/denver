@@ -7,7 +7,7 @@ export default function AboutSection() {
     const features = [
         {
             title: "1. Engineering & Manufacturing Excellence",
-            content: "With an annual turnover exceeding ₹50+ Crores, Synergyelectra operates advanced ISO 9001:2015 manufacturing facilities. We combine seasoned engineering talent with automated assembly to produce CPRI-tested electrical boards and power systems."
+            content: "With over 35 years of engineering expertise, Synergy Systems operates advanced ISO 9001:2015 manufacturing facilities. We combine seasoned engineering talent with automated assembly to produce CPRI-tested electrical boards and power systems."
         },
         {
             title: "2. Turnkey Power Infrastructure",
@@ -38,7 +38,7 @@ export default function AboutSection() {
 
                     <img
                         src="/photos/DSC_9530.JPG"
-                        alt="Synergyelectra Industrial Manufacturing Facility"
+                        alt="Synergy Systems Industrial Manufacturing Facility"
                         className="w-full h-[400px] md:h-[560px] object-cover rounded-md shadow-2xl border border-slate-200 relative z-10"
                     />
 
@@ -46,8 +46,8 @@ export default function AboutSection() {
                         <div className="flex items-center gap-3">
                             <Factory size={32} className="text-[#FBAE17]" />
                             <div>
-                                <div className="text-2xl font-black text-[#FBAE17]">₹50+ CR</div>
-                                <div className="text-[10px] text-slate-300 font-bold uppercase tracking-wider">Annual Turnover Legacy</div>
+                                <div className="text-2xl font-black text-[#FBAE17]">35+ Years</div>
+                                <div className="text-[10px] text-slate-300 font-bold uppercase tracking-wider">Engineering Legacy</div>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ export default function AboutSection() {
                     </h2>
 
                     <p className="text-slate-600 text-sm md:text-base mb-8 leading-relaxed font-normal">
-                        In today’s rapidly advancing industrial landscape, reliable power infrastructure is foundational. Synergyelectra stands as a benchmark in electrical engineering, turnkey panel manufacturing, industrial battery chargers, and high-yield solar infrastructures.
+                        In today’s rapidly advancing industrial landscape, reliable power infrastructure is foundational. Synergy Systems stands as a benchmark in electrical engineering, turnkey panel manufacturing, industrial battery chargers, and high-yield solar infrastructures.
                     </p>
 
                     {/* Accordion Features */}

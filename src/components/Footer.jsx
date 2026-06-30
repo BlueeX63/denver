@@ -110,8 +110,8 @@ export default function Footer() {
                     <div className="flex flex-col gap-1">
                         <span className="font-bold text-sm text-white">Address:</span>
                         <p className="text-slate-400 text-sm leading-relaxed">
-                            Sector 17A, Gautam Buddha Nagar,<br />
-                            Greater Noida, Uttar Pradesh - 203201
+                            D 211, SURAJPUR SITE 5, KASNA,<br />
+                            GREATER NOIDA UP 201312
                         </p>
                     </div>
 

@@ -14,7 +14,7 @@ export default function About() {
 
   const faqs = [
     {
-      question: "What is Synergyelectra's manufacturing and quality testing protocol?",
+      question: "What is Synergy Systems's manufacturing and quality testing protocol?",
       answer: "Every LT panel, PCC board, battery charger, and solar structure undergoes rigorous Factory Acceptance Testing (FAT). This includes CPRI certified high-voltage dielectric tests, continuous thermal run checks under load, and strict ISO 9001:2015 quality adherence."
     },
     {
@@ -53,8 +53,8 @@ export default function About() {
   return (
     <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-800">
       <SEO 
-        title="About Us | Synergyelectra" 
-        description="Learn about Synergyelectra, a premier national power contractor with a ₹50+ Crore turnover, offering turnkey electrical manufacturing and renewable infrastructure."
+        title="About Us | Synergy Systems" 
+        description="Learn about Synergy Systems, an ISO 9001:2015 certified manufacturer with 35+ years of engineering expertise, offering turnkey electrical manufacturing and automation solutions."
         url="https://www.denver.com/about"
       />
       {/* Hero Header Section */}
@@ -74,10 +74,10 @@ export default function About() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FBAE17] tracking-tight mb-4 drop-shadow-md uppercase m-0">
-            About Synergyelectra
+            About Synergy Systems
           </h1>
           <p className="text-emerald-200 text-base md:text-xl max-w-2xl mt-2 mb-8 leading-relaxed font-normal m-0 mx-auto md:mx-0">
-            Powering Industries. Enabling Sustainability. Engineering the Future. Turnkey electrical manufacturing and renewable infrastructure backed by a ₹50+ Crore industrial legacy.
+            Powering Progress with Reliable Electrical & Automation Solutions Since 1990. Turnkey electrical manufacturing and infrastructure backed by 35+ years of engineering excellence.
           </p>
 
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
@@ -99,14 +99,14 @@ export default function About() {
             <div className="aspect-[4/3] rounded-md overflow-hidden bg-slate-900 border border-slate-200 shadow-2xl">
               <img 
                 src="/photos/DSC_9599.JPG" 
-                alt="Synergyelectra Senior Engineering Assembly" 
+                alt="Synergy Systems Senior Engineering Assembly" 
                 className="w-full h-full object-cover"
               />
             </div>
             <div className="absolute -bottom-8 -right-4 md:-right-8 bg-[#072d1a] text-white p-8 rounded-md shadow-2xl border border-emerald-500/30 max-w-xs hidden sm:block">
               <span className="text-xs font-bold text-[#FBAE17] uppercase tracking-widest block mb-1">Industrial Benchmark</span>
-              <span className="text-3xl font-black text-white block">₹50+ CRORE</span>
-              <p className="text-[11px] text-slate-300 m-0 pt-1 leading-normal">Annual engineering turnover powering nationwide industrial switchyards and solar parks.</p>
+              <span className="text-3xl font-black text-white block">35+ YEARS</span>
+              <p className="text-[11px] text-slate-300 m-0 pt-1 leading-normal">Of engineering expertise, delivering innovative power solutions across India and overseas.</p>
             </div>
           </div>
 
@@ -121,7 +121,7 @@ export default function About() {
             </h2>
 
             <p className="text-slate-600 text-sm md:text-base leading-relaxed m-0 font-normal">
-              In today’s rapidly advancing industrial landscape, reliable power infrastructure is not optional — it is foundational. Synergyelectra stands as a trusted leader in delivering turnkey electrical boards, commercial solar plants, and heavy-duty battery chargers.
+              In today’s rapidly advancing industrial landscape, reliable power infrastructure is not optional — it is foundational. Synergy Systems stands as a trusted leader in delivering turnkey electrical boards, commercial solar plants, and heavy-duty battery chargers.
             </p>
 
             <p className="text-slate-600 text-sm md:text-base leading-relaxed m-0 font-normal">
@@ -150,7 +150,7 @@ export default function About() {
             <div className="aspect-[3/4] max-w-sm mx-auto rounded-xl overflow-hidden bg-slate-800 border border-emerald-500/30 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)] relative group">
               <img 
                 src="/photos/founder.JPG" 
-                alt="Synergyelectra Founder & Managing Director" 
+                alt="Synergy Systems Founder & Managing Director" 
                 className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90"></div>
@@ -170,32 +170,91 @@ export default function About() {
               Driven By Engineering Mastery & Uncompromising Integrity
             </h2>
             <p className="text-slate-300 text-base md:text-lg leading-relaxed m-0 font-light">
-              Under visionary leadership, Synergyelectra has grown from a specialized electrical switchboard workshop into a premier national power contractor scaling a ₹50+ Crore annual turnover.
+              Established in 1990, Synergy Systems has grown into one of India's trusted manufacturers of Power Conditioning Equipment, Electrical Distribution Systems, and Industrial Automation Solutions.
             </p>
             <p className="text-slate-300 text-sm md:text-base leading-relaxed m-0">
               With an uncompromising dedication to CPRI type-tested dielectric safety, zero-millisecond UPS redundancy, and severe-weather solar structural engineering, our founder instilled a corporate standard where reliability is never compromised. Every panel, charger, and power system is built to sustain critical plant loads for decades.
             </p>
             <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-slate-800/80">
               <div className="border-l-2 border-emerald-500 pl-4 space-y-1 mt-4">
-                <span className="text-2xl font-black text-white block">25+ Years</span>
-                <span className="text-xs text-slate-400 uppercase font-medium block">Industrial Engineering Legacy</span>
+                <span className="text-2xl font-black text-white block">35+ Years</span>
+                <span className="text-xs text-slate-400 uppercase font-medium block">Manufacturing Excellence</span>
               </div>
               <div className="border-l-2 border-[#FBAE17] pl-4 space-y-1 mt-4">
-                <span className="text-2xl font-black text-white block">1000+ Facilities</span>
-                <span className="text-xs text-slate-400 uppercase font-medium block">Powered Nationwide</span>
+                <span className="text-2xl font-black text-white block">50+</span>
+                <span className="text-xs text-slate-400 uppercase font-medium block">Dedicated Professionals</span>
               </div>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Why Choose Synergyelectra (Page 10 from PDF) */}
+      {/* Milestones Section */}
+      <section className="bg-white py-24 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto px-6 space-y-12">
+          <div className="text-center space-y-3">
+            <span className="text-xs font-bold text-emerald-700 uppercase tracking-widest block">Our Journey</span>
+            <h2 className="text-3xl md:text-5xl font-black text-slate-900 m-0 tracking-tight">
+              Milestones of Excellence
+            </h2>
+            <p className="text-slate-600 text-sm md:text-base max-w-2xl mx-auto m-0">
+              For over three decades, Synergy Systems has continuously evolved by embracing new technologies and expanding manufacturing capabilities.
+            </p>
+          </div>
+
+          <div className="relative border-l-2 border-emerald-500/30 ml-4 md:ml-12 space-y-12 pb-8">
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-[#FBAE17] border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">1990</h3>
+              <p className="text-emerald-700 font-bold text-sm uppercase tracking-wide mt-1 mb-2">Foundation of Synergy Systems</p>
+              <p className="text-slate-600 text-sm m-0">Manufacturing of UPS Systems commenced at Nangloi, Delhi.</p>
+            </div>
+            
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">2000</h3>
+              <p className="text-slate-600 text-sm mt-2 m-0">Among the first UPS manufacturers in India to achieve ISO 9001 Certification, demonstrating our commitment to quality management.</p>
+            </div>
+            
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">2018</h3>
+              <p className="text-slate-600 text-sm mt-2 m-0">Manufacturing facility relocated to B-2, Patparganj Industrial Area, Delhi, significantly enhancing production capabilities.</p>
+            </div>
+            
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">2019</h3>
+              <p className="text-slate-600 text-sm mt-2 m-0">Successfully obtained CPRI Type Test Certification for LT Panels (50 kA, 4000 A), reaffirming compliance with national standards.</p>
+            </div>
+            
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-emerald-500 border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">2020</h3>
+              <p className="text-slate-600 text-sm mt-2 m-0">Expanded manufacturing portfolio with Low Voltage (433V) Switchboards, strengthening our electrical distribution solutions.</p>
+            </div>
+            
+            <div className="relative pl-8 md:pl-12">
+              <div className="absolute -left-[9px] top-1 w-4 h-4 rounded-full bg-[#FBAE17] border-4 border-white shadow-sm"></div>
+              <h3 className="text-xl font-black text-slate-900 m-0">2023</h3>
+              <div className="mt-2 space-y-3">
+                <p className="text-slate-600 text-sm m-0">• Relocated to our modern integrated manufacturing facility at D 211, SURAJPUR SITE 5, KASNA GREATER NOIDA UP 201312, offering enhanced production infrastructure.</p>
+                <p className="text-slate-600 text-sm m-0">• Established a dedicated Sheet Metal Fabrication Division, enabling complete in-house manufacturing.</p>
+                <p className="text-slate-600 text-sm m-0">• Installed advanced CNC fabrication machinery and modern manufacturing equipment to improve precision.</p>
+                <p className="text-slate-600 text-sm m-0">• Entered into a strategic collaboration with FI-BOX Group for manufacturing of Polycarbonate LT Panels.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose Synergy Systems (Page 10 from PDF) */}
       <section className="bg-slate-900 text-white py-24 border-y border-slate-800">
         <div className="max-w-7xl mx-auto px-6 space-y-16">
           <div className="text-center max-w-3xl mx-auto space-y-3">
             <span className="text-xs font-bold text-[#FBAE17] uppercase tracking-widest block">Core Corporate Pillars</span>
             <h2 className="text-3xl md:text-5xl font-black text-white m-0 tracking-tight">
-              Why Partner With Synergyelectra
+              Why Partner With Synergy Systems
             </h2>
             <p className="text-slate-300 text-sm md:text-base m-0">
               Combining engineering mastery, certified high-grade components, and disciplined project execution to ensure maximum plant uptime.

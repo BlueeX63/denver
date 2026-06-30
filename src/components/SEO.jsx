@@ -38,10 +38,10 @@ export default function SEO({
 }
 
 SEO.defaultProps = {
-  title: "Synergyelectra | High Quality Power Electronics",
-  description: "Synergyelectra provides cutting-edge power electronics including Solar UPS, Panels, and Battery Chargers tailored for industrial and commercial needs.",
-  keywords: "Synergyelectra, Solar UPS, Power Panels, Battery Chargers, Industrial Power",
-  name: "Synergyelectra",
+  title: "Synergy Systems | High Quality Power Electronics",
+  description: "Synergy Systems provides cutting-edge power electronics including Solar UPS, Panels, and Battery Chargers tailored for industrial and commercial needs.",
+  keywords: "Synergy Systems, Solar UPS, Power Panels, Battery Chargers, Industrial Power",
+  name: "Synergy Systems",
   type: "website",
   url: "https://www.denver.com/",
   image: "https://www.denver.com/vite.svg"

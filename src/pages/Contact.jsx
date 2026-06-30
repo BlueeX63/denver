@@ -55,7 +55,7 @@ export default function Contact() {
     {
       icon: <MapPin size={28} className="text-[#FBAE17]" />,
       title: "Manufacturing Plant & HQ",
-      lines: ["Sector 17A, Gautam Buddha Nagar", "Greater Noida, Uttar Pradesh - 203201"],
+      lines: ["D 211, SURAJPUR SITE 5, KASNA", "GREATER NOIDA UP 201312"],
     },
     {
       icon: <Phone size={28} className="text-[#FBAE17]" />,
@@ -72,7 +72,7 @@ export default function Contact() {
   return (
     <div className="min-h-screen flex flex-col font-outfit bg-white selection:bg-emerald-500 selection:text-white text-slate-800">
       <SEO 
-        title="Contact Us | Synergyelectra" 
+        title="Contact Us | Synergy Systems" 
         description="Connect with our senior electrical audit desk for turnkey substation commissioning and solar EPC inquiries."
         url="https://www.denver.com/contact"
       />
@@ -93,7 +93,7 @@ export default function Contact() {
           </div>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black text-[#FBAE17] tracking-tight mb-4 drop-shadow-md uppercase m-0">
-            Contact Synergyelectra
+            Contact Synergy Systems
           </h1>
           <p className="text-emerald-200 text-base md:text-xl max-w-2xl mt-2 mb-8 leading-relaxed font-normal m-0 mx-auto md:mx-0">
             Connect directly with our senior electrical audit desk for turnkey substation commissioning, float/boost charger manufacturing, or commercial solar EPC inquiries.
@@ -102,7 +102,7 @@ export default function Contact() {
           <div className="flex flex-wrap items-center justify-center md:justify-start gap-4">
             <div className="flex items-center gap-2 text-emerald-300 text-xs uppercase tracking-widest font-bold px-4 py-3 bg-white/5 rounded-md border border-white/10">
               <Factory size={16} className="text-[#FBAE17]" />
-              <span>₹50+ Cr Corporate Turnover Desk</span>
+              <span>Corporate Engineering Desk</span>
             </div>
           </div>
         </div>
@@ -207,7 +207,7 @@ export default function Contact() {
               className="w-full h-full"
               style={{ border: 0 }}
               loading="lazy"
-              title="Synergyelectra Plant Location Map"
+              title="Synergy Systems Plant Location Map"
             ></iframe>
           </div>
           <div className="p-6 bg-[#072d1a] text-white rounded-md shadow-md border border-emerald-800">

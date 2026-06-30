@@ -15,7 +15,7 @@ export default function FeaturesSection() {
                     </div>
 
                     <h2 className="text-4xl md:text-5xl lg:text-5xl font-extrabold text-slate-900 leading-tight max-w-4xl">
-                        Key Advantages Of Synergyelectra<br />Power & Switchboards
+                        Key Advantages Of Synergy Systems<br />Power & Switchboards
                     </h2>
                 </div>
 
@@ -53,7 +53,7 @@ export default function FeaturesSection() {
 
                         <img
                             src="/photos/DSC_9575.JPG"
-                            alt="Synergyelectra Industrial Panel Setup"
+                            alt="Synergy Systems Industrial Panel Setup"
                             className="w-full max-w-[500px] h-auto object-cover drop-shadow-2xl rounded-2xl border-4 border-emerald-500/20"
                         />
                     </div>

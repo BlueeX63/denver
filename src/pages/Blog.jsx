@@ -47,8 +47,8 @@ export default function Blog() {
   return (
     <div className="min-h-screen flex flex-col font-outfit">
       <SEO 
-        title="Blog & Insights | Synergyelectra" 
-        description="Read the latest insights and updates from Synergyelectra on power electronics, solar installations, and industrial switchgear."
+        title="Blog & Insights | Synergy Systems" 
+        description="Read the latest insights and updates from Synergy Systems on power electronics, solar installations, and industrial switchgear."
         url="https://www.denver.com/blog"
       />
       <Navbar />

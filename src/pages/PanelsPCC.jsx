@@ -41,7 +41,7 @@ export default function PanelsPCC() {
       title="PCC (Power Control Center)"
       subtitle="Main Power Distribution Hub Managing High-Capacity Plant Loads"
       intro="PCC panels act as the primary electrical control brain of industrial facilities. Receiving bulk power directly from transformers, they execute centralized load management, harmonic filtering, and total plant protection."
-      sustainabilityText="Synergyelectra PCC panels enhance energy efficiency by reducing transmission losses and improving load balancing. Advanced protection systems prevent equipment damage, extending operational lifespan. Precision-engineered bus bar systems reduce overheating and power inefficiencies. Built with premium insulation materials, our PCC panels ensure long-term sustainability and operational safety for heavy-duty applications."
+      sustainabilityText="Synergy Systems PCC panels enhance energy efficiency by reducing transmission losses and improving load balancing. Advanced protection systems prevent equipment damage, extending operational lifespan. Precision-engineered bus bar systems reduce overheating and power inefficiencies. Built with premium insulation materials, our PCC panels ensure long-term sustainability and operational safety for heavy-duty applications."
       specifications={specifications}
       features={features}
       applications={applications}

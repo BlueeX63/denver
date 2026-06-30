@@ -32,7 +32,7 @@ const slides = [
     {
         id: 3,
         title: "Turnkey Industrial\nSwitchboards & Power",
-        subtitle: "₹50+ CRORE ANNUAL TURNOVER LEGACY",
+        subtitle: "35+ YEARS OF ENGINEERING EXCELLENCE",
         image: "/photos/DSC_9607.JPG",
         linkText: "Explore Panels",
         path: "/panels"

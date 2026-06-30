@@ -60,7 +60,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 </head>
 <body>
 <div class="header">
-  <div class="turnover">₹50+ Cr Annual Turnover Facility • CPRI & IEC Certified</div>
+  <div class="turnover">35+ Years Engineering Legacy • CPRI & IEC Certified</div>
   <h1>${title}</h1>
   <p style="margin:0;color:#f1f5f9;font-size:15px;">${subtitle || intro || 'Industrial Power Distribution Infrastructure'}</p>
   <div class="badge">OFFICIAL FACTORY SPECIFICATION SHEET</div>
@@ -70,7 +70,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
   ${specTableRows}
 </table>
 <div class="footer">
-  <strong style="color:#0f172a;">SYNERGYELECTRA POWER SOLUTIONS</strong><br>
+  <strong style="color:#0f172a;">SYNERGY SYSTEMS POWER SOLUTIONS</strong><br>
   Powering Industries. Enabling Sustainability. Engineering the Future.<br>
   Turnkey Design, Manufacturing & Lifetime Service Support • ISO 9001:2015 Certified
 </div>
@@ -81,7 +81,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
     const url = URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.href = url;
-    a.download = `${title ? title.replace(/[^a-zA-Z0-9]/g, '_') : 'Synergyelectra'}_Technical_Datasheet.html`;
+    a.download = `${title ? title.replace(/[^a-zA-Z0-9]/g, '_') : 'Synergy Systems'}_Technical_Datasheet.html`;
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -133,7 +133,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
           <Download className="text-emerald-400 animate-pulse" size={20} />
           <div>
             <p className="text-sm font-bold m-0 text-white">Downloading Technical Datasheet...</p>
-            <p className="text-xs text-slate-400 m-0">Synergyelectra_Spec_Sheet.pdf (2.4 MB)</p>
+            <p className="text-xs text-slate-400 m-0">Synergy Systems_Spec_Sheet.pdf (2.4 MB)</p>
           </div>
         </div>
       )}
@@ -478,10 +478,10 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
           <div className="lg:col-span-8 space-y-6 relative z-10">
             <span className="text-[#FBAE17] font-bold text-xs uppercase tracking-wider block">Corporate Profile & Positioning</span>
             <h3 className="text-3xl md:text-5xl font-black text-white m-0 tracking-tight leading-tight">
-              Trusted 50+ Crore Annual Turnover Engineering Legacy
+              Trusted 35+ Years Engineering Legacy
             </h3>
             <p className="text-slate-300 text-base md:text-lg leading-relaxed m-0">
-              Synergyelectra has built a national reputation for technical excellence, premium manufacturing standards, and successful execution of complex industrial projects across sectors. We are not merely equipment assemblers — we are comprehensive power solution providers offering turnkey design, manufacturing, integration, and lifetime service support.
+              Synergy Systems has built a national reputation for technical excellence, premium manufacturing standards, and successful execution of complex industrial projects across sectors. We are not merely equipment assemblers — we are comprehensive power solution providers offering turnkey design, manufacturing, integration, and lifetime service support.
             </p>
             <div className="flex flex-wrap gap-6 pt-2">
               <div className="flex items-center gap-2 text-emerald-300 font-bold text-sm">
@@ -501,8 +501,8 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
           <div className="lg:col-span-4 flex flex-col items-center justify-center relative z-10">
             <div className="bg-white/10 backdrop-blur-md p-8 rounded-md border border-white/20 text-center w-full max-w-xs space-y-4">
-              <span className="text-4xl md:text-5xl font-black text-[#FBAE17] block">₹50+ Cr</span>
-              <span className="text-xs uppercase font-bold tracking-widest text-emerald-200 block">Annual Turnover Profile</span>
+              <span className="text-4xl md:text-5xl font-black text-[#FBAE17] block">35+ Years</span>
+              <span className="text-xs uppercase font-bold tracking-widest text-emerald-200 block">Engineering Profile</span>
               <div className="h-px bg-white/20 w-full"></div>
               <p className="text-xs text-slate-300 m-0">Engineering complex infrastructure across manufacturing, healthcare, and defense.</p>
             </div>

@@ -40,7 +40,7 @@ export default function BatteryChargerSolarPanel() {
       categoryPath="/battery-charger"
       title="Solar Panels"
       subtitle="High-Efficiency Photovoltaic Modules for Maximum Commercial Energy Yield"
-      intro="As energy costs soar, industrial self-generation is critical. Synergyelectra supplies tier-1 high-efficiency monocrystalline solar modules engineered to convert sunlight into reliable industrial electricity."
+      intro="As energy costs soar, industrial self-generation is critical. Synergy Systems supplies tier-1 high-efficiency monocrystalline solar modules engineered to convert sunlight into reliable industrial electricity."
       sustainabilityText="Our solar panels generate clean, renewable energy while significantly reducing carbon emissions. Built using advanced cell technology, they ensure minimal degradation over time. Durable weather-resistant construction enhances lifespan and performance consistency. These panels represent a sustainable investment in long-term energy independence."
       specifications={specifications}
       features={features}

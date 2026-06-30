@@ -29,7 +29,7 @@ export default function BatteryCharger() {
   return (
     <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-800">
       <SEO 
-        title="Industrial Battery Chargers & Solar Structures | Synergyelectra" 
+        title="Industrial Battery Chargers & Solar Structures | Synergy Systems" 
         description="Explore our high-efficiency solar panels and cyclone-tested MMS mounting frameworks designed for 25+ years of generation."
         url="https://www.denver.com/battery-charger"
       />
@@ -60,7 +60,7 @@ export default function BatteryCharger() {
             </a>
             <div className="flex items-center gap-2 text-emerald-300 text-xs uppercase tracking-widest font-bold px-4 py-3 bg-white/5 rounded-md border border-white/10">
               <Factory size={16} className="text-[#FBAE17]" />
-              <span>₹50+ Cr Annual Turnover Legacy</span>
+              <span>35+ Years Engineering Legacy</span>
             </div>
           </div>
         </div>
@@ -147,7 +147,7 @@ export default function BatteryCharger() {
       <section className="bg-slate-900 text-white pt-20 pb-44 border-t border-slate-800">
         <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-8 space-y-6">
-            <span className="text-[#FBAE17] text-xs font-bold uppercase tracking-wider block">Synergyelectra Turnkey Solutions</span>
+            <span className="text-[#FBAE17] text-xs font-bold uppercase tracking-wider block">Synergy Systems Turnkey Solutions</span>
             <h3 className="text-3xl md:text-4xl font-black text-white m-0 tracking-tight">
               Turnkey Design, Manufacturing & Lifetime Field Support
             </h3>
@@ -162,8 +162,8 @@ export default function BatteryCharger() {
           </div>
           <div className="lg:col-span-4 grid grid-cols-2 gap-4 text-center">
             <div className="p-6 bg-slate-800/80 rounded-md border border-slate-700">
-              <span className="text-3xl font-black text-[#FBAE17] block">₹50+ Cr</span>
-              <span className="text-[10px] text-slate-400 uppercase tracking-wider">Annual Turnover</span>
+              <span className="text-3xl font-black text-[#FBAE17] block">35+ Years</span>
+              <span className="text-[10px] text-slate-400 uppercase tracking-wider">Engineering Legacy</span>
             </div>
             <div className="p-6 bg-slate-800/80 rounded-md border border-slate-700">
               <span className="text-3xl font-black text-[#FBAE17] block">ISO</span>

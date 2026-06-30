@@ -53,7 +53,7 @@ export default function SolarUPS1_1_1() {
   const whyChoose = [
     { title: 'Unmatched Tier-IV Availability', description: 'Engineered specifically for hyperscale data centers, defense installations, and continuous healthcare facilities.' },
     { title: 'High Short-Circuit Withstand', description: 'Rugged sheet metal fabrication and heavy-duty bus bar architecture tested to stringent industrial quality benchmarks.' },
-    { title: '₹50+ Crore Turnkey Profile', description: 'Backed by Synergyelectra’s proven corporate leadership in executing complex multi-megawatt electrical infrastructures.' },
+    { title: '35+ Years Turnkey Profile', description: 'Backed by Synergy Systems’s proven corporate leadership in executing complex multi-megawatt electrical infrastructures.' },
     { title: 'Maintenance Without Shutdown', description: 'Triple redundancy enables complete hot-swapping and routine overhauls while critical operations continue flawlessly.' }
   ];
 
@@ -87,7 +87,7 @@ export default function SolarUPS1_1_1() {
       breadcrumb="Solar Online UPS 1+1+1 Ph"
       title="Solar Online UPS 1+1+1 PH"
       headline="Maximum Redundancy & Resilience: Solar Online UPS 1+1+1 Ph"
-      intro="The pinnacle of mission-critical power protection. Synergyelectra’s Solar Online UPS 1+1+1 Ph offers triple modular parallel redundancy (N+2 topology) combined with high-harvest solar MPPT integration. Designed for large data centers, defense installations, financial institutions, and continuous processing plants, this ultra-reliable system guarantees total fault tolerance and high system availability with zero switching delay."
+      intro="The pinnacle of mission-critical power protection. Synergy Systems’s Solar Online UPS 1+1+1 Ph offers triple modular parallel redundancy (N+2 topology) combined with high-harvest solar MPPT integration. Designed for large data centers, defense installations, financial institutions, and continuous processing plants, this ultra-reliable system guarantees total fault tolerance and high system availability with zero switching delay."
       specifications={specifications}
       features={features}
       seamlessTransfer="Triple redundant active standby switching guarantees zero downtime and 0ms switching interruption under severe grid failures."

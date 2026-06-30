@@ -46,7 +46,7 @@ export default function SafetySection() {
                     </h2>
 
                     <p className="text-slate-300 text-base md:text-lg mb-10 leading-relaxed max-w-lg font-light">
-                        Every switchboard, LT/PCC panel, and UPS infrastructure manufactured by Synergyelectra adheres to strict IEC safety compliance. Our engineers enforce continuous thermal load testing and high-voltage dielectric insulation defense to protect your plant personnel.
+                        Every switchboard, LT/PCC panel, and UPS infrastructure manufactured by Synergy Systems adheres to strict IEC safety compliance. Our engineers enforce continuous thermal load testing and high-voltage dielectric insulation defense to protect your plant personnel.
                     </p>
 
                     <a href="/contact" className="bg-[#FBAE17] text-slate-950 no-underline inline-block py-4 px-8 font-black text-sm uppercase tracking-wider rounded shadow-lg transition duration-300 ease-in-out hover:bg-amber-400 hover:shadow-xl transform hover:-translate-y-0.5">

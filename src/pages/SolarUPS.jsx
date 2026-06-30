@@ -51,7 +51,7 @@ export default function SolarUPS() {
   return (
     <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden">
       <SEO 
-        title="Solar Online UPS Systems | Synergyelectra" 
+        title="Solar Online UPS Systems | Synergy Systems" 
         description="Explore our Industrial Solar UPS portfolio featuring 1+1 and 3-3 redundancy, 0ms transfer time, and reliable double-conversion architectures."
         url="https://www.denver.com/solar-ups"
       />
@@ -74,7 +74,7 @@ export default function SolarUPS() {
           </h1>
 
           <p className="text-slate-300 text-lg md:text-xl max-w-3xl leading-relaxed">
-            Uninterrupted clean power is the backbone of mission-critical operations. Synergyelectra integrates DSP-based double conversion architecture with intelligent solar MPPT harvesting.
+            Uninterrupted clean power is the backbone of mission-critical operations. Synergy Systems integrates DSP-based double conversion architecture with intelligent solar MPPT harvesting.
           </p>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function SolarUPS() {
               <Award size={28} />
             </div>
             <div>
-              <h3 className="font-bold text-slate-900 text-lg m-0">₹50+ Crore Turnover</h3>
+              <h3 className="font-bold text-slate-900 text-lg m-0">35+ Years Excellence</h3>
               <p className="text-slate-500 text-xs m-0 mt-1">Trusted legacy in heavy industrial electrical engineering</p>
             </div>
           </div>

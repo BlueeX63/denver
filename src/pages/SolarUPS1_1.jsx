@@ -51,7 +51,7 @@ export default function SolarUPS1_1() {
   ];
 
   const whyChoose = [
-    { title: 'Proven Industrial Reliability', description: 'Decades of engineering leadership delivering ₹50+ Crore annual corporate turnover across mission-critical sectors.' },
+    { title: 'Proven Industrial Reliability', description: 'Decades of engineering leadership delivering 35+ years of engineering excellence across mission-critical sectors.' },
     { title: 'Global Manufacturing Standards', description: 'DSP-based, MPPT-enabled power electronics manufactured with certified high-grade rugged components.' },
     { title: 'End-to-End Turnkey Support', description: 'Comprehensive site design, structural fabrication, installation, and dedicated 24/7 AMC maintenance services.' },
     { title: 'Zero Downtime Architecture', description: 'The 1+1 redundant topology allows routine maintenance and component inspection without shutting down critical loads.' }
@@ -87,7 +87,7 @@ export default function SolarUPS1_1() {
       breadcrumb="Solar Online UPS 1-1 Ph"
       title="Solar Online UPS 1–1 PH"
       headline="The Future of Uninterrupted Power: Solar Online UPS 1-1 Ph"
-      intro="Seamlessly integrate solar energy with your industrial power backup system for unmatched reliability and operational efficiency. Synergyelectra’s Solar Online UPS 1-1 Ph combines true online double-conversion UPS technology with intelligent parallel redundancy. Designed for manufacturing plants, IT facilities, and mission-critical applications, it ensures continuous, clean pure sine wave power with zero transfer time—whether energy comes from solar arrays, battery storage, or the utility grid."
+      intro="Seamlessly integrate solar energy with your industrial power backup system for unmatched reliability and operational efficiency. Synergy Systems’s Solar Online UPS 1-1 Ph combines true online double-conversion UPS technology with intelligent parallel redundancy. Designed for manufacturing plants, IT facilities, and mission-critical applications, it ensures continuous, clean pure sine wave power with zero transfer time—whether energy comes from solar arrays, battery storage, or the utility grid."
       specifications={specifications}
       features={features}
       seamlessTransfer="Zero interruption (0ms transfer time) during power switching between solar PV, battery discharge, and utility power grid."
