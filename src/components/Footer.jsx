@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { PhoneCall, ArrowRight } from 'lucide-react';
+import logo from '../assets/logo.png';
 
 export default function Footer() {
     return (
@@ -43,7 +44,7 @@ export default function Footer() {
                 <div className="flex flex-col gap-6 pr-4">
                     <div className="flex items-center gap-2 mb-2">
                         {/* Brand Logo */}
-                        <img src="/src/assets/logo.png" alt="Synergy Logo" className="h-24 w-auto transform transition-transform duration-500 hover:scale-105" />
+                        <img src={logo} alt="Synergy Logo" className="h-24 w-auto transform transition-transform duration-500 hover:scale-105" />
                     </div>
                     <p className="text-slate-400 text-sm leading-relaxed">
                         Tristique nulla aliquet enim tortor at auctor urna
