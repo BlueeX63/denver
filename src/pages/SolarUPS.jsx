@@ -14,7 +14,7 @@ export default function SolarUPS() {
       config: '1+1 Parallel Redundant',
       path: '/solar-ups-1-1',
       badge: 'MISSION CRITICAL',
-      image: "/photos/ai_online_ups.png"
+      image: "/photos/DSC_9535.JPG"
     },
     {
       title: 'Online & Industrial UPS 1+1+1',
@@ -24,7 +24,7 @@ export default function SolarUPS() {
       config: '1+1+1 Triple Redundant',
       path: '/solar-ups-1-1-1',
       badge: 'MAXIMUM RESILIENCE',
-      image: "/photos/ai_power_room.png"
+      image: "/photos/DSC_9530.JPG"
     },
     {
       title: 'Solar Hybrid UPS 3-1',
@@ -34,7 +34,7 @@ export default function SolarUPS() {
       config: '3-Phase AC in / 1-Phase out',
       path: '/solar-ups-3-1',
       badge: 'GRID BALANCED',
-      image: "/photos/ai_solar_ups.png"
+      image: "/photos/DSC_9534.JPG"
     },
     {
       title: 'Heavy Industrial Solar UPS 3-3',
@@ -66,7 +66,7 @@ export default function SolarUPS() {
       />
       
       {/* Hero Header Section - Full Screen Height */}
-      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/ai_power_room.png')` }}>
+      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/DSC_9530.JPG')` }}>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/70"></div>
         <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none"></div>
         

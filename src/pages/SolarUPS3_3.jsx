@@ -76,8 +76,8 @@ export default function SolarUPS3_3() {
   ];
 
   const productImages = [
-    "/photos/ai_online_ups.png",
-    "/photos/ai_power_room.png",
+    "/photos/DSC_9535.JPG",
+    "/photos/DSC_9530.JPG",
     "/photos/DSC_9535.JPG",
     "/photos/DSC_9536.JPG"
   ];

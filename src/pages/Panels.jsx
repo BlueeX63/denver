@@ -13,7 +13,7 @@ export default function Panels() {
       features: ['High Short-Circuit Withstand', 'Modular & Scalable Design', 'Corrosion-Resistant Enclosure'],
       path: '/panels-lt',
       badge: 'CORE DISTRIBUTION',
-      image: "/photos/ai_electrical_panels.png"
+      image: "/photos/DSC_9583.JPG"
     },
     {
       title: 'PCC (Power Control Center)',
@@ -97,7 +97,7 @@ export default function Panels() {
         url="https://www.denver.com/panels"
       />
       {/* Hero Header Section - Full Screen Height */}
-      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/ai_electrical_panels.png')` }}>
+      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/DSC_9583.JPG')` }}>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/70"></div>
         <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none"></div>
         

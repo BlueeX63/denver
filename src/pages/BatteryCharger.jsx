@@ -13,7 +13,7 @@ export default function BatteryCharger() {
       features: ['Automatic Float & Boost Mode', 'Precision Constant Voltage/Current', 'High Surge & Ripple Defense'],
       path: '/battery-charger-industrial',
       badge: 'HEAVY SUBSTATION',
-      image: "/photos/ai_substation_charger.png"
+      image: "/photos/DSC_9528.JPG"
     },
     {
       title: 'High-Efficiency Solar Panels',
@@ -22,7 +22,7 @@ export default function BatteryCharger() {
       features: ['Up to 22.8% Module Efficiency', 'Anti-PID Certified Passivation', '25-Year Linear Yield Warranty'],
       path: '/battery-charger-solar-panel',
       badge: 'TIER-1 SOLAR',
-      image: "/photos/ai_solar_structure.png"
+      image: "/photos/DSC_9584.JPG"
     },
     {
       title: 'Engineered Solar Structures',
@@ -43,7 +43,7 @@ export default function BatteryCharger() {
         url="https://www.denver.com/battery-charger"
       />
       {/* Hero Header Section - Full Screen Height */}
-      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/ai_substation_charger.png')` }}>
+      <div className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden pt-6 pb-16 bg-cover bg-center border-b border-emerald-900/40" style={{ backgroundImage: `url('/photos/DSC_9528.JPG')` }}>
         <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/70"></div>
         <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none"></div>
         

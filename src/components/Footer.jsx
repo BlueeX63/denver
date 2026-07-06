@@ -47,9 +47,7 @@ export default function Footer() {
                         <img src={logo} alt="Synergy Logo" className="h-24 w-auto transform transition-transform duration-500 hover:scale-105" />
                     </div>
                     <p className="text-slate-400 text-sm leading-relaxed">
-                        Tristique nulla aliquet enim tortor at auctor urna
-                        massa enim nec dui nunc mattis enim ut tellus
-                        aute irure repreaen ..
+                        Leading manufacturers of CPRI type-tested electrical switchboards, online double-conversion UPS systems, and industrial battery chargers. Powering India's infrastructure with 25+ years of engineering excellence.
                     </p>
                     <div className="flex items-center gap-4 mt-2">
                         <div className="w-10 h-10 rounded bg-slate-800 flex items-center justify-center text-emerald-500">

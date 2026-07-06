@@ -96,19 +96,53 @@ export default function Navbar() {
         { path: '/battery-charger-solar-structure', label: 'Solar Structure' }
     ];
 
-    const renderDesktopDropdown = (links, extraClasses = '', gridCols = false) => (
-        <div className={`absolute left-0 top-full pt-4 opacity-0 invisible translate-y-4 scale-95 group-hover:opacity-100 group-hover:visible group-hover:translate-y-0 group-hover:scale-100 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] z-50 ${extraClasses}`}>
-            <div className="w-full bg-slate-900/90 backdrop-blur-xl border border-white/10 rounded-xl p-2 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.7)] relative overflow-hidden">
+    const productCategories = [
+        { label: 'Solar UPS', path: '/solar-ups', sublinks: upsLinks, gridCols: false, width: 'min-w-[260px]' },
+        { label: 'Panels', path: '/panels', sublinks: panelLinks, gridCols: true, width: 'min-w-[480px]' },
+        { label: 'Battery Charger', path: '/battery-charger', sublinks: chargerLinks, gridCols: false, width: 'min-w-[260px]' }
+    ];
+
+    const isProductsActive = () => {
+        return pathname.startsWith('/solar-ups') || pathname.startsWith('/panels') || pathname.startsWith('/battery-charger');
+    };
+
+    const renderProductsDropdown = () => (
+        <div className="absolute left-0 top-full pt-4 opacity-0 invisible translate-y-4 scale-95 group-hover/main:opacity-100 group-hover/main:visible group-hover/main:translate-y-0 group-hover/main:scale-100 transition-all duration-500 ease-[cubic-bezier(0.23,1,0.32,1)] z-50 min-w-[240px]">
+            <div className="w-full bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl p-2 shadow-[0_20px_40px_-15px_rgba(0,0,0,0.8)] relative overflow-visible">
                 <div className="absolute -top-10 -left-10 w-32 h-32 bg-emerald-500/20 rounded-full blur-3xl pointer-events-none"></div>
-                <ul className={`relative z-10 list-none m-0 p-0 ${gridCols ? 'grid grid-cols-2 gap-x-4 gap-y-1' : 'flex flex-col gap-1'}`}>
-                    {links.map((item, i) => (
-                        <li key={i}>
-                            <Link to={item.path} className={`group/item flex items-center justify-between px-4 py-2.5 rounded-md text-sm transition-all duration-300 whitespace-nowrap no-underline ${pathname === item.path ? 'text-emerald-400 font-bold pl-6 border-l-2 border-emerald-400' : 'text-slate-300 font-medium hover:text-white hover:pl-6 hover:bg-white/5'}`}>
-                                <span className="transform transition-transform duration-300 group-hover/item:translate-x-1">{item.label}</span>
-                                <ArrowRight size={14} className={`transition-all duration-300 text-emerald-400 ${pathname === item.path ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'}`} />
-                            </Link>
-                        </li>
-                    ))}
+                <ul className="relative z-10 list-none m-0 p-0 flex flex-col gap-1">
+                    {productCategories.map((cat, i) => {
+                        const isCatActive = pathname.startsWith(cat.path);
+                        return (
+                            <li key={i} className="relative group/sub">
+                                <Link to={cat.path} className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm transition-all duration-300 whitespace-nowrap no-underline ${isCatActive ? 'text-emerald-400 font-bold bg-white/10' : 'text-slate-200 font-medium hover:text-white hover:bg-white/10'}`}>
+                                    <span className="transform transition-transform duration-300 group-hover/sub:translate-x-1 font-semibold">{cat.label}</span>
+                                    <div className="flex items-center gap-1">
+                                        <ChevronDown size={14} className="-rotate-90 text-emerald-400 transition-transform duration-300 group-hover/sub:translate-x-0.5" />
+                                    </div>
+                                </Link>
+
+                                {/* Nested Submenu */}
+                                <div className="absolute left-full top-0 -mt-2 pl-3 opacity-0 invisible -translate-x-3 scale-95 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-x-0 group-hover/sub:scale-100 transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] z-50">
+                                    <div className={`bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl p-2.5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.9)] relative overflow-hidden ${cat.width}`}>
+                                        <div className="px-3 py-2 border-b border-white/10 mb-1 flex justify-between items-center">
+                                            <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">{cat.label} Subpages</span>
+                                        </div>
+                                        <ul className={`list-none m-0 p-0 ${cat.gridCols ? 'grid grid-cols-2 gap-x-3 gap-y-1' : 'flex flex-col gap-1'}`}>
+                                            {cat.sublinks.map((sub, j) => (
+                                                <li key={j}>
+                                                    <Link to={sub.path} className={`group/item flex items-center justify-between px-3 py-2 rounded-md text-sm transition-all duration-300 whitespace-nowrap no-underline ${pathname === sub.path ? 'text-emerald-400 font-bold pl-5 border-l-2 border-emerald-400 bg-white/5' : 'text-slate-300 font-medium hover:text-white hover:pl-5 hover:bg-white/5'}`}>
+                                                        <span className="transform transition-transform duration-300 group-hover/item:translate-x-1">{sub.label}</span>
+                                                        <ArrowRight size={14} className={`transition-all duration-300 text-emerald-400 ${pathname === sub.path ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'}`} />
+                                                    </Link>
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
+                                </div>
+                            </li>
+                        );
+                    })}
                 </ul>
             </div>
         </div>
@@ -135,17 +169,12 @@ export default function Navbar() {
                         <ul className="flex flex-row gap-8 list-none m-0 p-0 items-center">
                             <li>{renderNavLink('/', 'Home')}</li>
                             <li>{renderNavLink('/about', 'About Us')}</li>
-                            <li className="relative group py-0">
-                                {renderNavLink('/solar-ups', <>Solar UPS <ChevronDown size={14} className="transform transition-transform duration-300 group-hover:rotate-180" /></>)}
-                                {renderDesktopDropdown(upsLinks, 'min-w-[260px]')}
-                            </li>
-                            <li className="relative group py-0">
-                                {renderNavLink('/panels', <>Panels <ChevronDown size={14} className="transform transition-transform duration-300 group-hover:rotate-180" /></>)}
-                                {renderDesktopDropdown(panelLinks, 'md:-left-24 min-w-[500px]', true)}
-                            </li>
-                            <li className="relative group py-0">
-                                {renderNavLink('/battery-charger', <>Battery Charger <ChevronDown size={14} className="transform transition-transform duration-300 group-hover:rotate-180" /></>)}
-                                {renderDesktopDropdown(chargerLinks, 'min-w-[260px]')}
+                            <li className="relative group/main py-0">
+                                <div className={`relative font-semibold text-sm transition-colors duration-300 flex items-center gap-1 py-2 px-1 group/nav cursor-pointer ${isProductsActive() ? 'text-emerald-400 font-bold' : 'text-white hover:text-slate-200'}`}>
+                                    <span className="relative z-10 flex items-center gap-1">Our Products <ChevronDown size={14} className="transform transition-transform duration-300 group-hover/main:rotate-180" /></span>
+                                    <span className={`absolute inset-x-0 bottom-0 h-[2.5px] rounded-full transition-all duration-500 ease-[cubic-bezier(0.25,1,0.5,1)] origin-center ${isProductsActive() ? 'bg-emerald-400 scale-x-100 opacity-100 shadow-[0_1px_8px_rgba(52,211,153,0.8)]' : 'bg-emerald-400 scale-x-0 opacity-0 group-hover/nav:scale-x-100 group-hover/nav:opacity-100'}`} />
+                                </div>
+                                {renderProductsDropdown()}
                             </li>
                             <li>{renderNavLink('/contact', 'Contact Us')}</li>
                         </ul>
@@ -188,70 +217,33 @@ export default function Navbar() {
                             <Link to="/" onClick={() => setOpen(false)} className={`py-3 px-3 rounded-lg text-sm font-semibold no-underline transition-colors ${pathname === '/' ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5'}`}>Home</Link>
                             <Link to="/about" onClick={() => setOpen(false)} className={`py-3 px-3 rounded-lg text-sm font-semibold no-underline transition-colors ${pathname === '/about' ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5'}`}>About Us</Link>
 
-                            {/* Solar UPS Accordion */}
+                            {/* Our Products Accordion */}
                             <div>
                                 <button 
-                                    onClick={() => toggleMobileDropdown('ups')}
-                                    className={`w-full py-3 px-3 rounded-lg text-sm font-semibold flex items-center justify-between border-none cursor-pointer transition-colors ${isActive('/solar-ups') ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5 bg-transparent'}`}
+                                    onClick={() => toggleMobileDropdown('products')}
+                                    className={`w-full py-3 px-3 rounded-lg text-sm font-semibold flex items-center justify-between border-none cursor-pointer transition-colors ${isProductsActive() ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5 bg-transparent'}`}
                                 >
-                                    <span>Solar UPS</span>
-                                    <ChevronDown size={16} className={`transition-transform duration-300 ${mobileDropdown === 'ups' ? 'rotate-180 text-emerald-400' : 'text-slate-400'}`} />
+                                    <span>Our Products</span>
+                                    <ChevronDown size={16} className={`transition-transform duration-300 ${mobileDropdown === 'products' ? 'rotate-180 text-emerald-400' : 'text-slate-400'}`} />
                                 </button>
-                                {mobileDropdown === 'ups' && (
-                                    <div className="ml-3 pl-3 border-l-2 border-emerald-500/30 flex flex-col gap-0.5 mt-1 mb-2">
-                                        <Link to="/solar-ups" onClick={() => setOpen(false)} className="py-2.5 px-3 rounded-md text-sm no-underline transition-colors text-emerald-400 font-bold hover:bg-emerald-500/10">
-                                            View All Solar UPS →
-                                        </Link>
-                                        {upsLinks.map((item, i) => (
-                                            <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2.5 px-3 rounded-md text-sm no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
-                                                {item.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
 
-                            {/* Panels Accordion */}
-                            <div>
-                                <button 
-                                    onClick={() => toggleMobileDropdown('panels')}
-                                    className={`w-full py-3 px-3 rounded-lg text-sm font-semibold flex items-center justify-between border-none cursor-pointer transition-colors ${isActive('/panels') ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5 bg-transparent'}`}
-                                >
-                                    <span>Panels</span>
-                                    <ChevronDown size={16} className={`transition-transform duration-300 ${mobileDropdown === 'panels' ? 'rotate-180 text-emerald-400' : 'text-slate-400'}`} />
-                                </button>
-                                {mobileDropdown === 'panels' && (
-                                    <div className="ml-3 pl-3 border-l-2 border-emerald-500/30 flex flex-col gap-0.5 mt-1 mb-2">
-                                        <Link to="/panels" onClick={() => setOpen(false)} className="py-2.5 px-3 rounded-md text-sm no-underline transition-colors text-emerald-400 font-bold hover:bg-emerald-500/10">
-                                            View All Panels →
-                                        </Link>
-                                        {panelLinks.map((item, i) => (
-                                            <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2.5 px-3 rounded-md text-sm no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
-                                                {item.label}
-                                            </Link>
-                                        ))}
-                                    </div>
-                                )}
-                            </div>
-
-                            {/* Battery Charger Accordion */}
-                            <div>
-                                <button 
-                                    onClick={() => toggleMobileDropdown('charger')}
-                                    className={`w-full py-3 px-3 rounded-lg text-sm font-semibold flex items-center justify-between border-none cursor-pointer transition-colors ${isActive('/battery-charger') ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5 bg-transparent'}`}
-                                >
-                                    <span>Battery Charger</span>
-                                    <ChevronDown size={16} className={`transition-transform duration-300 ${mobileDropdown === 'charger' ? 'rotate-180 text-emerald-400' : 'text-slate-400'}`} />
-                                </button>
-                                {mobileDropdown === 'charger' && (
-                                    <div className="ml-3 pl-3 border-l-2 border-emerald-500/30 flex flex-col gap-0.5 mt-1 mb-2">
-                                        <Link to="/battery-charger" onClick={() => setOpen(false)} className="py-2.5 px-3 rounded-md text-sm no-underline transition-colors text-emerald-400 font-bold hover:bg-emerald-500/10">
-                                            View All Battery Chargers →
-                                        </Link>
-                                        {chargerLinks.map((item, i) => (
-                                            <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2.5 px-3 rounded-md text-sm no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
-                                                {item.label}
-                                            </Link>
+                                {mobileDropdown === 'products' && (
+                                    <div className="ml-3 pl-3 border-l-2 border-emerald-500/30 flex flex-col gap-2 mt-1 mb-2">
+                                        {productCategories.map((cat, idx) => (
+                                            <div key={idx} className="bg-white/5 rounded-lg p-2">
+                                                <div className="flex items-center justify-between py-1.5 px-2">
+                                                    <Link to={cat.path} onClick={() => setOpen(false)} className="text-sm font-bold text-emerald-400 no-underline hover:underline">
+                                                        {cat.label} →
+                                                    </Link>
+                                                </div>
+                                                <div className="flex flex-col gap-0.5 mt-1 pl-2 border-l border-white/10">
+                                                    {cat.sublinks.map((item, i) => (
+                                                        <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2 px-2 rounded-md text-xs no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
+                                                            {item.label}
+                                                        </Link>
+                                                    ))}
+                                                </div>
+                                            </div>
                                         ))}
                                     </div>
                                 )}

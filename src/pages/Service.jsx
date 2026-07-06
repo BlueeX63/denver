@@ -21,17 +21,17 @@ export default function Service() {
 
   const blogs = [
   {
-    image: "/blog1.jpg",
+    image: "/photos/DSC_9596.JPG",
     title: "Navigating the World of EV Charging",
     comments: 3,
   },
   {
-    image: "/blog2.jpg",
+    image: "/photos/DSC_9597.JPG",
     title: "Evolution of EV Charging Infrastructure",
     comments: 5,
   },
   {
-    image: "/blog3.jpg",
+    image: "/photos/DSC_9598.JPG",
     title: "Discovering the Best EV Charging Options",
     comments: 6,
   },
