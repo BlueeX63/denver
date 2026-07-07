@@ -7,21 +7,21 @@ import SEO from '../components/SEO';
 export default function SolarUPS() {
   const products = [
     {
-      title: 'Online & Industrial UPS 1+1',
+      title: 'Online & Industrial UPS 1-1',
       subtitle: 'Single Phase Input / Single Phase Output',
-      desc: 'True online double-conversion UPS with 1+1 parallel active standby redundancy. Zero transfer time power protection for homes, medical clinics, and server rooms.',
+      desc: 'True online double-conversion UPS with 1-1 single phase architecture and parallel active standby redundancy. Zero transfer time power protection for homes, medical clinics, and server rooms.',
       capacity: '5kVA - 30kVA',
-      config: '1+1 Parallel Redundant',
+      config: '1-1 Single Phase / Parallel',
       path: '/solar-ups-1-1',
       badge: 'MISSION CRITICAL',
       image: "/photos/DSC_9535.JPG"
     },
     {
-      title: 'Online & Industrial UPS 1+1+1',
+      title: 'Online & Industrial UPS 1-1-1',
       subtitle: 'Triple Modular Parallel Redundant',
-      desc: 'Ultra-reliable N+2 triple redundant architecture. Designed specifically for tier-IV hyperscale data centers, defense telemetry, and continuous ICU facilities.',
+      desc: 'Ultra-reliable 1-1-1 modular architecture. Designed specifically for tier-IV hyperscale data centers, defense telemetry, and continuous ICU facilities.',
       capacity: '15kVA - 120kVA',
-      config: '1+1+1 Triple Redundant',
+      config: '1-1-1 Modular Parallel',
       path: '/solar-ups-1-1-1',
       badge: 'MAXIMUM RESILIENCE',
       image: "/photos/DSC_9530.JPG"

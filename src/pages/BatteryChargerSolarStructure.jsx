@@ -36,11 +36,11 @@ export default function BatteryChargerSolarStructure() {
   return (
     <PanelDetailLayout 
       breadcrumb="Solar Structure"
-      category="Renewable Energy"
-      categoryPath="/battery-charger"
+      category="Products"
+      categoryPath="/solar-structure"
       title="Solar Structure"
       subtitle="Heavy-Duty Engineered Mounting Systems for Decades of Solar Stability"
-      intro="A solar power plant is only as strong as its foundation. Our engineered solar mounting structures provide rigid, corrosion-resistant steel skeletons designed to secure valuable photovoltaic arrays for 30+ years."
+      intro="Engineered mounting systems ensuring stability and durability of solar installations."
       sustainabilityText="Manufactured with corrosion-resistant materials, our structures withstand harsh environmental conditions. Optimized tilt and alignment enhance solar efficiency. Long service life and minimal maintenance requirements reduce environmental impact. Precision fabrication reflects premium quality and structural strength."
       specifications={specifications}
       features={features}

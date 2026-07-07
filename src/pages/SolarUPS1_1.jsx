@@ -7,7 +7,7 @@ export default function SolarUPS1_1() {
     { label: 'Capacity Rating', value: '5kVA / 10kVA / 15kVA / 20kVA / 30kVA' },
     { label: 'Input Phase Architecture', value: 'Single Phase AC Input (170 - 260 V AC)' },
     { label: 'Output Phase Voltage', value: 'Single Phase Pure Sine Wave (220V / 230V / 240V ±1% Regulated)' },
-    { label: 'Redundancy Configuration', value: '1+1 Parallel Redundant Active-Standby Architecture' },
+    { label: 'Redundancy Configuration', value: '1-1 Single Phase Architecture / Parallel Redundant' },
     { label: 'System Operating Efficiency', value: '>94% (Solar MPPT Harvest Mode), >91% (Online Double Conversion)' },
     { label: 'Transfer / Failover Time', value: '0 s (True Zero-Interruption Online Double Conversion)' },
     { label: 'Output AC Waveform', value: 'High Precision Pure Sine Wave (THD < 2% Linear Load)' },
@@ -54,7 +54,7 @@ export default function SolarUPS1_1() {
     { title: 'Proven 35+ Year Industrial Legacy', description: 'Synergy Systems brings over three decades of engineering excellence across India’s mission-critical medical, telecom, and industrial sectors.' },
     { title: 'ISO 9001 & CPRI Compliance', description: 'Every power electronic system is strictly manufactured with certified high-grade rugged components and subjected to thorough factory acceptance tests.' },
     { title: 'Comprehensive Lifecycle Support', description: 'From initial load sizing and electrical layout design to structural installation and 24/7 Annual Maintenance Contracts (AMC).' },
-    { title: '1+1 Active Standby Resilience', description: 'The 1+1 redundant topology ensures that even if one power module undergoes maintenance, critical equipment continues running without interruption.' }
+    { title: '1-1 Active Standby Resilience', description: 'The 1-1 redundant topology ensures that even if one power module undergoes maintenance, critical equipment continues running without interruption.' }
   ];
 
   const howItWorks = [
@@ -87,7 +87,7 @@ export default function SolarUPS1_1() {
       breadcrumb="Online & Industrial UPS 1-1 Ph"
       title="Online & Industrial UPS 1–1 PH"
       headline="Mission-Critical Uninterrupted Power: Online & Industrial UPS 1-1 Ph"
-      intro="Experience the ultimate reliability in power conditioning with Synergy Systems’s Online & Industrial UPS 1-1 Ph. Engineered for hospitals, data rooms, and automated manufacturing, this system combines DSP-controlled true online double-conversion architecture with active 1+1 parallel redundancy. Integrated solar MPPT capability ensures that your facility not only enjoys zero transfer delay (0s) during utility grid failures but also maximizes clean solar energy savings."
+      intro="Experience the ultimate reliability in power conditioning with Synergy Systems’s Online & Industrial UPS 1-1 Ph. Engineered for hospitals, data rooms, and automated manufacturing, this system combines DSP-controlled true online double-conversion architecture with active 1-1 parallel redundancy. Integrated solar MPPT capability ensures that your facility not only enjoys zero transfer delay (0s) during utility grid failures but also maximizes clean solar energy savings."
       specifications={specifications}
       features={features}
       seamlessTransfer="True zero interruption (0s transfer time) during failover switching between solar PV generation, battery discharge, and utility AC grid."

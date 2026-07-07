@@ -73,8 +73,8 @@ export default function Navbar() {
     };
 
     const upsLinks = [
-        { path: '/solar-ups-1-1', label: 'Solar Online UPS 1+1' },
-        { path: '/solar-ups-1-1-1', label: 'Solar Online UPS 1+1+1' },
+        { path: '/solar-ups-1-1', label: 'Solar Online UPS 1-1' },
+        { path: '/solar-ups-1-1-1', label: 'Solar Online UPS 1-1-1' },
         { path: '/solar-ups-3-1', label: 'Solar Online UPS 3-1' },
         { path: '/solar-ups-3-3', label: 'Solar Online UPS 3-3' }
     ];
@@ -88,22 +88,20 @@ export default function Navbar() {
         { path: '/panels-distribution-board', label: 'Distribution Board' },
         { path: '/panels-bus-duct', label: 'Bus duct' },
         { path: '/panels-apfc', label: 'APFC Panel' },
-        { path: '/panels-junction-boxes', label: 'Junction boxes' }
-    ];
-
-    const chargerLinks = [
-        { path: '/battery-charger-solar-panel', label: 'Solar Panel' },
-        { path: '/battery-charger-solar-structure', label: 'Solar Structure' }
+        { path: '/panels-junction-boxes', label: 'Junction boxes' },
+        { path: '/battery-charger-solar-panel', label: 'Solar Panels' }
     ];
 
     const productCategories = [
-        { label: 'Solar UPS', path: '/solar-ups', sublinks: upsLinks, gridCols: false, width: 'min-w-[260px]' },
+        { label: 'UPS', path: '/solar-ups', sublinks: upsLinks, gridCols: false, width: 'min-w-[260px]' },
         { label: 'Panels', path: '/panels', sublinks: panelLinks, gridCols: true, width: 'min-w-[480px]' },
-        { label: 'Battery Charger', path: '/battery-charger', sublinks: chargerLinks, gridCols: false, width: 'min-w-[260px]' }
+        { label: 'Battery Charger', path: '/battery-charger' },
+        { label: 'Solar Structure', path: '/solar-structure' },
+        { label: 'Servo Stabilizer', path: '/servo-stabilizer' }
     ];
 
     const isProductsActive = () => {
-        return pathname.startsWith('/solar-ups') || pathname.startsWith('/panels') || pathname.startsWith('/battery-charger');
+        return pathname.startsWith('/solar-ups') || pathname.startsWith('/panels') || pathname.startsWith('/battery-charger') || pathname.startsWith('/solar-structure') || pathname.startsWith('/servo-stabilizer');
     };
 
     const renderProductsDropdown = () => (
@@ -117,29 +115,33 @@ export default function Navbar() {
                             <li key={i} className="relative group/sub">
                                 <Link to={cat.path} className={`flex items-center justify-between px-4 py-3 rounded-lg text-sm transition-all duration-300 whitespace-nowrap no-underline ${isCatActive ? 'text-emerald-400 font-bold bg-white/10' : 'text-slate-200 font-medium hover:text-white hover:bg-white/10'}`}>
                                     <span className="transform transition-transform duration-300 group-hover/sub:translate-x-1 font-semibold">{cat.label}</span>
-                                    <div className="flex items-center gap-1">
-                                        <ChevronDown size={14} className="-rotate-90 text-emerald-400 transition-transform duration-300 group-hover/sub:translate-x-0.5" />
-                                    </div>
+                                    {cat.sublinks && cat.sublinks.length > 0 && (
+                                        <div className="flex items-center gap-1">
+                                            <ChevronDown size={14} className="-rotate-90 text-emerald-400 transition-transform duration-300 group-hover/sub:translate-x-0.5" />
+                                        </div>
+                                    )}
                                 </Link>
 
                                 {/* Nested Submenu */}
-                                <div className="absolute left-full top-0 -mt-2 pl-3 opacity-0 invisible -translate-x-3 scale-95 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-x-0 group-hover/sub:scale-100 transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] z-50">
-                                    <div className={`bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl p-2.5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.9)] relative overflow-hidden ${cat.width}`}>
-                                        <div className="px-3 py-2 border-b border-white/10 mb-1 flex justify-between items-center">
-                                            <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">{cat.label} Subpages</span>
+                                {cat.sublinks && cat.sublinks.length > 0 && (
+                                    <div className="absolute left-full top-0 -mt-2 pl-3 opacity-0 invisible -translate-x-3 scale-95 group-hover/sub:opacity-100 group-hover/sub:visible group-hover/sub:translate-x-0 group-hover/sub:scale-100 transition-all duration-300 ease-[cubic-bezier(0.23,1,0.32,1)] z-50">
+                                        <div className={`bg-slate-900/95 backdrop-blur-xl border border-white/10 rounded-xl p-2.5 shadow-[0_20px_50px_-10px_rgba(0,0,0,0.9)] relative overflow-hidden ${cat.width}`}>
+                                            <div className="px-3 py-2 border-b border-white/10 mb-1 flex justify-between items-center">
+                                                <span className="text-xs font-bold uppercase tracking-wider text-emerald-400">{cat.label} Subpages</span>
+                                            </div>
+                                            <ul className={`list-none m-0 p-0 ${cat.gridCols ? 'grid grid-cols-2 gap-x-3 gap-y-1' : 'flex flex-col gap-1'}`}>
+                                                {cat.sublinks.map((sub, j) => (
+                                                    <li key={j}>
+                                                        <Link to={sub.path} className={`group/item flex items-center justify-between px-3 py-2 rounded-md text-sm transition-all duration-300 whitespace-nowrap no-underline ${pathname === sub.path ? 'text-emerald-400 font-bold pl-5 border-l-2 border-emerald-400 bg-white/5' : 'text-slate-300 font-medium hover:text-white hover:pl-5 hover:bg-white/5'}`}>
+                                                            <span className="transform transition-transform duration-300 group-hover/item:translate-x-1">{sub.label}</span>
+                                                            <ArrowRight size={14} className={`transition-all duration-300 text-emerald-400 ${pathname === sub.path ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'}`} />
+                                                        </Link>
+                                                    </li>
+                                                ))}
+                                            </ul>
                                         </div>
-                                        <ul className={`list-none m-0 p-0 ${cat.gridCols ? 'grid grid-cols-2 gap-x-3 gap-y-1' : 'flex flex-col gap-1'}`}>
-                                            {cat.sublinks.map((sub, j) => (
-                                                <li key={j}>
-                                                    <Link to={sub.path} className={`group/item flex items-center justify-between px-3 py-2 rounded-md text-sm transition-all duration-300 whitespace-nowrap no-underline ${pathname === sub.path ? 'text-emerald-400 font-bold pl-5 border-l-2 border-emerald-400 bg-white/5' : 'text-slate-300 font-medium hover:text-white hover:pl-5 hover:bg-white/5'}`}>
-                                                        <span className="transform transition-transform duration-300 group-hover/item:translate-x-1">{sub.label}</span>
-                                                        <ArrowRight size={14} className={`transition-all duration-300 text-emerald-400 ${pathname === sub.path ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2 group-hover/item:opacity-100 group-hover/item:translate-x-0'}`} />
-                                                    </Link>
-                                                </li>
-                                            ))}
-                                        </ul>
                                     </div>
-                                </div>
+                                )}
                             </li>
                         );
                     })}
@@ -236,13 +238,15 @@ export default function Navbar() {
                                                         {cat.label} →
                                                     </Link>
                                                 </div>
-                                                <div className="flex flex-col gap-0.5 mt-1 pl-2 border-l border-white/10">
-                                                    {cat.sublinks.map((item, i) => (
-                                                        <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2 px-2 rounded-md text-xs no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
-                                                            {item.label}
-                                                        </Link>
-                                                    ))}
-                                                </div>
+                                                {cat.sublinks && cat.sublinks.length > 0 && (
+                                                    <div className="flex flex-col gap-0.5 mt-1 pl-2 border-l border-white/10">
+                                                        {cat.sublinks.map((item, i) => (
+                                                            <Link key={i} to={item.path} onClick={() => setOpen(false)} className={`py-2 px-2 rounded-md text-xs no-underline transition-colors ${pathname === item.path ? 'text-emerald-400 font-bold bg-emerald-500/10' : 'text-slate-300 font-medium hover:text-white hover:bg-white/5'}`}>
+                                                                {item.label}
+                                                            </Link>
+                                                        ))}
+                                                    </div>
+                                                )}
                                             </div>
                                         ))}
                                     </div>
@@ -335,7 +339,7 @@ export default function Navbar() {
 
                                             {customSelectOpen && (
                                                 <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-md shadow-2xl z-[120] overflow-hidden py-1.5 animate-fadeIn">
-                                                    {['Solar Online UPS (1+1 / 3-3 PH)', 'LT / PCC / MCC Panels', 'Industrial Battery Chargers', 'Complete Plant Electrical Infra'].map((opt, oIdx) => (
+                                                    {['Solar Online UPS (1-1 / 3-3 PH)', 'LT / PCC / MCC Panels', 'Industrial Battery Chargers', 'Solar Structures', 'Servo Voltage Stabilizers', 'Complete Plant Electrical Infra'].map((opt, oIdx) => (
                                                         <div 
                                                             key={oIdx}
                                                             onClick={() => {

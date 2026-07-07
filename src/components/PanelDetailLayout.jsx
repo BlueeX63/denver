@@ -255,9 +255,9 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       )}
 
       {/* Hero Header Section */}
-      <div className="relative w-full bg-[#072d1a] overflow-hidden pt-6 pb-20 md:pb-28">
-        <div className="absolute inset-0 opacity-15 bg-[radial-gradient(#10b981_1px,transparent_1px)] [background-size:24px_24px] pointer-events-none"></div>
-        <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-emerald-600/10 to-transparent pointer-events-none"></div>
+      <div className="relative w-full bg-slate-950 bg-cover bg-center overflow-hidden pt-6 pb-20 md:pb-28 border-b border-emerald-900/40" style={{ backgroundImage: `url('${(productImages && productImages[0]) ? productImages[0] : '/photos/DSC_9583.JPG'}')` }}>
+        <div className="absolute inset-0 bg-gradient-to-r from-slate-950 via-slate-950/90 to-slate-900/80"></div>
+        <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-l from-emerald-500/10 to-transparent pointer-events-none"></div>
         
         <Navbar />
 

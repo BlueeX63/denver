@@ -32,6 +32,7 @@ import PanelsJunctionBoxes from './pages/PanelsJunctionBoxes';
 import BatteryChargerIndustrial from './pages/BatteryChargerIndustrial';
 import BatteryChargerSolarPanel from './pages/BatteryChargerSolarPanel';
 import BatteryChargerSolarStructure from './pages/BatteryChargerSolarStructure';
+import ServoStabilizer from './pages/ServoStabilizer';
 
 function ScrollRoutes() {
   const scrollRef = useRef(null);
@@ -69,6 +70,8 @@ function ScrollRoutes() {
         <Route path="/solar-ups" element={<SolarUPS />} />
         <Route path="/panels" element={<Panels />} />
         <Route path="/battery-charger" element={<BatteryCharger />} />
+        <Route path="/solar-structure" element={<BatteryChargerSolarStructure />} />
+        <Route path="/servo-stabilizer" element={<ServoStabilizer />} />
 
         <Route path="/solar-ups-1-1" element={<SolarUPS1_1 />} />
         <Route path="/solar-ups-1-1-1" element={<SolarUPS1_1_1 />} />

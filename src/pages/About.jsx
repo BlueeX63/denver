@@ -26,7 +26,7 @@ export default function About() {
       answer: "We support heavy manufacturing plants, EHV transmission substations, telecom BTS networks, railway traction yards, healthcare institutions, hyperscale data centers, and commercial solar utility installations."
     },
     {
-      question: "How does your parallel active UPS redundancy (1+1 / 3-3 PH) work?",
+      question: "How does your parallel active UPS redundancy (1-1 / 3-3 PH) work?",
       answer: "Our active parallel redundant architecture ensures zero millisecond power transfer. If any master inverter module experiences a grid anomaly or undergoes scheduled maintenance, synchronized secondary units instantaneously sustain 100% of critical plant loads."
     },
     {

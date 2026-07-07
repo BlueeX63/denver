@@ -7,7 +7,7 @@ export default function SolarUPS1_1_1() {
     { label: 'Capacity Rating', value: '15kVA / 30kVA / 45kVA / 60kVA / 90kVA / 120kVA' },
     { label: 'Input Phase Architecture', value: 'Single Phase / Three Phase Compatible (170 - 280 V AC)' },
     { label: 'Output Phase Voltage', value: 'Single Phase Pure Sine Wave (220V / 230V / 240V ±1%)' },
-    { label: 'Redundancy Configuration', value: '1+1+1 Triple Modular Parallel Redundant (N+2 Topology)' },
+    { label: 'Redundancy Configuration', value: '1-1-1 Modular Parallel Redundant (N+2 Topology)' },
     { label: 'System Operating Efficiency', value: '>95% (Solar MPPT Harvest Mode), >92% (Online Mode)' },
     { label: 'Transfer / Failover Time', value: '0 s (Instantaneous Active Load Sharing)' },
     { label: 'Output AC Waveform', value: 'High Precision Pure Sine Wave (THD < 1.5%)' },
@@ -19,7 +19,7 @@ export default function SolarUPS1_1_1() {
 
   const features = [
     {
-      title: 'Triple Modular Redundancy (1+1+1)',
+      title: 'Modular Parallel Redundancy (1-1-1)',
       description: 'Three parallel UPS units actively sharing load. Even if two modules experience unexpected faults or maintenance, continuous load is sustained.',
       icon: <Layers size={32} />
     },
@@ -84,10 +84,10 @@ export default function SolarUPS1_1_1() {
 
   return (
     <SolarUPSDetailLayout
-      breadcrumb="Online & Industrial UPS 1+1+1 Ph"
-      title="Online & Industrial UPS 1+1+1 PH"
-      headline="Maximum Redundancy & Resilience: Online & Industrial UPS 1+1+1 Ph"
-      intro="The pinnacle of mission-critical power protection. Synergy Systems’s Online & Industrial UPS 1+1+1 Ph offers triple modular parallel redundancy (N+2 topology) combined with high-harvest solar MPPT integration. Designed for large data centers, defense installations, financial institutions, and continuous processing plants, this ultra-reliable system guarantees total fault tolerance and maximum uptime with zero switching delay (0s)."
+      breadcrumb="Online & Industrial UPS 1-1-1 Ph"
+      title="Online & Industrial UPS 1-1-1 PH"
+      headline="Maximum Redundancy & Resilience: Online & Industrial UPS 1-1-1 Ph"
+      intro="The pinnacle of mission-critical power protection. Synergy Systems’s Online & Industrial UPS 1-1-1 Ph offers modular parallel redundancy combined with high-harvest solar MPPT integration. Designed for large data centers, defense installations, financial institutions, and continuous processing plants, this ultra-reliable system guarantees total fault tolerance and maximum uptime with zero switching delay (0s)."
       specifications={specifications}
       features={features}
       seamlessTransfer="Triple redundant active standby switching guarantees zero downtime and 0s switching interruption under severe grid failures."

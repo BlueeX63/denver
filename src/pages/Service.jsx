@@ -85,7 +85,7 @@ export default function Service() {
 
   const testimonials = [
     "Synergy Systems commissioned our entire 415V PCC and LT panel setup for our manufacturing facility. Zero downtime over 5 years of heavy continuous operation!",
-    "Their 1+1+1 parallel redundant Solar UPS powers our critical ICU telemetry without a single millisecond of voltage drop. Truly unmatched reliability.",
+    "Their 1-1-1 modular parallel Solar UPS powers our critical ICU telemetry without a single millisecond of voltage drop. Truly unmatched reliability.",
     "The comprehensive solar plant installation was flawless. The MMS structures survived last season's severe coastal cyclones effortlessly. Highly recommended engineering team.",
     "Exceptional field support and CPRI certified safety documentation. Synergy Systems has been our trusted electrical infrastructure partner for over a decade."
   ];
