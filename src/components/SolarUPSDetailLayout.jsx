@@ -126,7 +126,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
   };
 
   return (
-    <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden">
+    <div className="bg-slate-950 min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-100">
       {/* Downloading Toast Notification */}
       {downloadingToast && (
         <div className="fixed top-24 right-6 z-50 bg-slate-900 text-white px-6 py-4 rounded-2xl shadow-2xl border border-emerald-500/30 flex items-center gap-3 animate-bounce">
@@ -141,7 +141,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       {/* Quick Quote Modal */}
       {showQuoteModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md transition-opacity animate-fadeIn text-left font-outfit">
-          <div className="bg-white rounded-md max-w-md w-full p-0 shadow-2xl relative border border-slate-300 overflow-visible transform transition-all">
+          <div className="bg-slate-900 rounded-md max-w-md w-full p-0 shadow-2xl relative border border-slate-800 overflow-visible transform transition-all text-slate-100">
             {/* Top Emerald Header Banner */}
             <div className="bg-[#072d1a] px-6 py-4 text-white flex justify-between items-center rounded-t-md border-b border-emerald-500/30">
               <div className="flex items-center gap-2 text-[#FBAE17] font-bold text-xs tracking-wider uppercase">
@@ -156,18 +156,18 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               </button>
             </div>
 
-            <div className="p-6 md:p-8 bg-white rounded-b-md">
+            <div className="p-6 md:p-8 bg-slate-900 rounded-b-md">
               {submitted ? (
-                <div className="py-8 text-center flex flex-col items-center justify-center bg-white">
-                  <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                <div className="py-8 text-center flex flex-col items-center justify-center bg-slate-900">
+                  <div className="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mb-3 shadow-sm">
                     <CheckCircle2 size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1 mt-0">Request Received!</h3>
-                  <p className="text-slate-600 text-xs leading-relaxed max-w-xs m-0 mx-auto">Our engineering team will analyze your requirements and reach out shortly.</p>
+                  <h3 className="text-xl font-bold text-white mb-1 mt-0">Request Received!</h3>
+                  <p className="text-slate-300 text-xs leading-relaxed max-w-xs m-0 mx-auto">Our engineering team will analyze your requirements and reach out shortly.</p>
                 </div>
               ) : (
                 <>
-                  <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-6 mt-0 tracking-tight">Request Factory Estimate</h3>
+                  <h3 className="text-xl md:text-2xl font-black text-white mb-6 mt-0 tracking-tight">Request Factory Estimate</h3>
 
                   <form onSubmit={handleQuoteSubmit} className="space-y-4">
                     <div>
@@ -177,7 +177,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Your Name *"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -187,7 +187,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Email Address *"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                       <input 
                         type="tel" 
@@ -195,7 +195,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Phone Number *"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                     </div>
 
@@ -203,14 +203,14 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                     <div className="relative">
                       <div 
                         onClick={() => setCustomSelectOpen(!customSelectOpen)}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 bg-white text-slate-900 text-sm font-medium shadow-sm flex items-center justify-between cursor-pointer hover:border-emerald-600 transition-colors select-none"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 bg-slate-950 text-slate-100 text-sm font-medium shadow-sm flex items-center justify-between cursor-pointer hover:border-emerald-500 transition-colors select-none"
                       >
                         <span>{formData.capacity || 'Select Capacity Range'}</span>
-                        <ChevronDown size={16} className={`text-slate-500 transition-transform duration-200 ${customSelectOpen ? 'rotate-180 text-emerald-600' : ''}`} />
+                        <ChevronDown size={16} className={`text-slate-400 transition-transform duration-200 ${customSelectOpen ? 'rotate-180 text-emerald-400' : ''}`} />
                       </div>
 
                       {customSelectOpen && (
-                        <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-md shadow-2xl z-[70] overflow-hidden py-1.5 animate-fadeIn">
+                        <div className="absolute left-0 right-0 top-full mt-1 bg-slate-900 border border-slate-700 rounded-md shadow-2xl z-[70] overflow-hidden py-1.5 animate-fadeIn">
                           {['5kVA - 10kVA', '15kVA - 30kVA', '40kVA - 80kVA', '100kVA+ Industrial'].map((opt, oIdx) => (
                             <div 
                               key={oIdx}
@@ -218,10 +218,10 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                                 setFormData({...formData, capacity: opt});
                                 setCustomSelectOpen(false);
                               }}
-                              className={`px-4 py-2.5 text-sm cursor-pointer transition-colors flex items-center justify-between select-none ${formData.capacity === opt ? 'bg-emerald-50 text-emerald-700 font-bold' : 'text-slate-700 font-medium hover:bg-slate-50'}`}
+                              className={`px-4 py-2.5 text-sm cursor-pointer transition-colors flex items-center justify-between select-none ${formData.capacity === opt ? 'bg-emerald-500/20 text-emerald-400 font-bold' : 'text-slate-300 font-medium hover:bg-slate-800'}`}
                             >
                               <span>{opt}</span>
-                              {formData.capacity === opt && <CheckCircle2 size={15} className="text-emerald-600" />}
+                              {formData.capacity === opt && <CheckCircle2 size={15} className="text-emerald-400" />}
                             </div>
                           ))}
                         </div>
@@ -234,12 +234,12 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Project Details / City Location (optional)"
                         value={formData.message}
                         onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm resize-none"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm resize-none"
                       ></textarea>
                     </div>
 
                     {errorMsg && (
-                      <div className="p-3 bg-red-50 text-red-700 border border-red-200 rounded-md text-sm font-semibold">
+                      <div className="p-3 bg-red-950/50 text-red-400 border border-red-800 rounded-md text-sm font-semibold">
                         {errorMsg}
                       </div>
                     )}
@@ -287,25 +287,25 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
       {/* Section 1: Intro Headline + Product Showcase Cards */}
       <section className="relative z-30 max-w-7xl mx-auto px-6 py-16 md:py-20 -mt-10">
-        <div className="bg-white rounded-md p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.08)] border border-slate-100 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="bg-slate-900 rounded-xl p-8 md:p-12 shadow-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           {/* Left Text Column */}
           <div className="lg:col-span-7 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 text-xs font-bold tracking-wider uppercase border border-emerald-200">
+            <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 text-emerald-400 text-xs font-bold tracking-wider uppercase border border-emerald-500/30">
               <Award size={14} />
               <span>True Online Double Conversion Architecture</span>
             </div>
 
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-slate-900 leading-[1.15] tracking-tight">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-extrabold text-white leading-[1.15] tracking-tight">
               {headline}
             </h2>
 
-            <p className="text-slate-600 text-base md:text-lg leading-relaxed">
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed">
               {intro}
             </p>
           </div>
 
           {/* Right Product Images Showcase (Continuous Left-Only Sliding Green Cards Track) */}
-          <div className="lg:col-span-5 flex flex-col items-center justify-center w-full overflow-hidden bg-white rounded-md p-2">
+          <div className="lg:col-span-5 flex flex-col items-center justify-center w-full overflow-hidden bg-slate-950/50 rounded-xl p-2 border border-slate-800">
             {(() => {
               const defaultFallback = [
                 "/photos/DSC_9594.JPG",
@@ -324,7 +324,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
               return (
                 <>
-                  <div className="relative w-full overflow-hidden py-4 bg-white">
+                  <div className="relative w-full overflow-hidden py-4 bg-transparent">
                     {/* Sliding Track of Cards */}
                     <div 
                       className="flex gap-5 transition-transform duration-700 ease-[cubic-bezier(0.16,1,0.3,1)] w-full"
@@ -336,7 +336,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         <div 
                           key={idx}
                           onClick={() => handleIndicatorClick(idx % safeList.length)}
-                          className="w-[calc(50%-10px)] h-72 md:h-80 border-2 border-emerald-500 rounded-md p-0 relative overflow-hidden flex-shrink-0 bg-white shadow-[0_10px_30px_rgba(16,185,129,0.12)] cursor-pointer group hover:shadow-[0_15px_40px_rgba(16,185,129,0.25)] transition-shadow duration-300"
+                          className="w-[calc(50%-10px)] h-72 md:h-80 border border-emerald-500/50 rounded-md p-0 relative overflow-hidden flex-shrink-0 bg-slate-950 shadow-[0_10px_30px_rgba(16,185,129,0.12)] cursor-pointer group hover:shadow-[0_15px_40px_rgba(16,185,129,0.25)] hover:border-emerald-400 transition-all duration-300"
                         >
                           <img 
                             src={imgUrl} 
@@ -353,7 +353,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                   </div>
 
                   {/* Clickable Slider Indicator Lines */}
-                  <div className="flex items-center justify-center gap-2 mt-6 flex-wrap z-20 relative bg-white w-full pt-2">
+                  <div className="flex items-center justify-center gap-2 mt-6 flex-wrap z-20 relative bg-transparent w-full pt-2">
                     {safeList.map((_, idx) => (
                       <button
                         key={idx}
@@ -361,7 +361,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         className={`h-1.5 transition-all duration-500 rounded-full cursor-pointer border-none p-0 ${
                           currentSlide === idx 
                             ? 'w-8 bg-emerald-500 shadow-sm animate-pulse' 
-                            : 'w-4 bg-slate-300 hover:bg-slate-400'
+                            : 'w-4 bg-slate-700 hover:bg-slate-600'
                         }`}
                         aria-label={`Go to slide ${idx + 1}`}
                       />
@@ -375,16 +375,16 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       </section>
 
       {/* Section 2: Large Product View + Orange Header Specification Table */}
-      <section className="bg-slate-50 py-20 px-6 border-y border-slate-200/60 relative">
+      <section className="bg-slate-950 py-20 px-6 border-y border-slate-800/80 relative">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-stretch">
           {/* Large Main Product View Card (Static single image, matching exact specification table height) */}
           <div className="lg:col-span-5 flex flex-col justify-between h-full">
-            <div className="bg-white border border-slate-200 rounded-md p-8 shadow-sm flex flex-col items-center justify-between relative overflow-hidden group flex-1 h-full min-h-[600px]">
+            <div className="bg-slate-900 border border-slate-800 rounded-md p-8 shadow-sm flex flex-col items-center justify-between relative overflow-hidden group flex-1 h-full min-h-[600px]">
               <div className="absolute top-0 left-0 w-full h-2 bg-gradient-to-r from-emerald-500 via-amber-400 to-blue-600"></div>
               
               <div className="w-full flex justify-between items-center mb-4 z-10 relative">
                 <span className="text-xs font-bold text-slate-400 tracking-wider">INDUSTRIAL GRADE</span>
-                <span className="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md">DSP CONTROLLED</span>
+                <span className="bg-emerald-500/20 text-emerald-400 text-xs font-bold px-2.5 py-1 rounded-md border border-emerald-500/30">DSP CONTROLLED</span>
               </div>
 
               {/* Locked permanently to static image [0] */}
@@ -396,7 +396,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                 />
               </div>
 
-              <div className="w-full bg-slate-50 p-4 rounded-md border border-slate-100 flex items-center justify-between text-xs text-slate-600 mt-4 z-10 relative flex-wrap gap-2">
+              <div className="w-full bg-slate-950/80 p-4 rounded-md border border-slate-800 flex items-center justify-between text-xs text-slate-300 mt-4 z-10 relative flex-wrap gap-2">
                 <span>⚡ Zero Switching Time</span>
                 <span>🛡️ High Overload Withstand</span>
                 <span>🔋 Smart MPPT</span>
@@ -413,7 +413,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               </Link>
               <Link 
                 to="/contact" 
-                className="bg-white border border-slate-200 px-5 py-3 rounded-md shadow-sm text-slate-800 font-bold text-sm hover:border-purple-300 transition-colors no-underline text-slate-900"
+                className="bg-slate-900 border border-slate-800 px-5 py-3 rounded-md shadow-sm text-slate-100 font-bold text-sm hover:border-purple-500 hover:bg-slate-800 transition-all no-underline"
               >
                 Contact us
               </Link>
@@ -422,7 +422,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
           {/* Specification Table Column */}
           <div className="lg:col-span-7">
-            <div className="bg-white border border-slate-200 rounded-md overflow-hidden shadow-sm">
+            <div className="bg-slate-900 border border-slate-800 rounded-md overflow-hidden shadow-sm">
               {/* Table Header (Exact Orange #F26E21 from reference) */}
               <div className="bg-[#F26E21] text-white grid grid-cols-12 font-bold text-base md:text-lg">
                 <div className="col-span-5 py-4 px-6 border-r border-orange-400/40">Specification</div>
@@ -430,18 +430,18 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               </div>
 
               {/* Table Body Rows */}
-              <div className="divide-y divide-slate-100 text-sm md:text-base">
+              <div className="divide-y divide-slate-800 text-sm md:text-base">
                 {specifications.map((spec, i) => (
                   <div 
                     key={i}
                     className={`grid grid-cols-12 transition-colors ${
-                      i % 2 === 1 ? 'bg-[#FAFDF9]' : 'bg-white'
-                    } hover:bg-emerald-50/50`}
+                      i % 2 === 1 ? 'bg-slate-900/50' : 'bg-slate-900'
+                    } hover:bg-slate-800/80`}
                   >
-                    <div className="col-span-5 py-4 px-6 font-semibold text-slate-800 border-r border-slate-100 flex items-center">
+                    <div className="col-span-5 py-4 px-6 font-semibold text-slate-200 border-r border-slate-800 flex items-center">
                       {spec.label}
                     </div>
-                    <div className="col-span-7 py-4 px-6 text-slate-600 font-medium flex items-center">
+                    <div className="col-span-7 py-4 px-6 text-slate-300 font-medium flex items-center">
                       {spec.value}
                     </div>
                   </div>
@@ -456,34 +456,34 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       <section className="py-20 px-6 max-w-7xl mx-auto">
         {/* INTRODUCTION */}
         <div className="mb-16 max-w-4xl">
-          <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+          <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
             INTRODUCTION
           </h3>
           <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-6"></div>
           
-          <p className="text-slate-600 text-base md:text-lg leading-relaxed">
-            Today's industrial landscape demands <strong className="text-slate-900">uninterrupted power</strong> and <strong className="text-slate-900">sustainable energy</strong>. Synergy Systems’s <strong className="text-slate-900">{title}</strong> delivers both acting as a <span className="text-emerald-700 font-semibold">solar inverter and true online double conversion UPS</span> in one robust system. By combining <strong className="text-slate-800">solar generation, grid power, and battery backup</strong>, it guarantees zero-downtime continuous supply while drastically reducing utility electricity bills. With <strong className="text-slate-800">DSP-based design, high MPPT efficiency, and comprehensive industrial protections</strong>, this UPS is the perfect foundational power infrastructure for modern industries.
+          <p className="text-slate-300 text-base md:text-lg leading-relaxed">
+            Today's industrial landscape demands <strong className="text-white">uninterrupted power</strong> and <strong className="text-white">sustainable energy</strong>. Synergy Systems’s <strong className="text-white">{title}</strong> delivers both acting as a <span className="text-emerald-400 font-semibold">solar inverter and true online double conversion UPS</span> in one robust system. By combining <strong className="text-slate-100">solar generation, grid power, and battery backup</strong>, it guarantees zero-downtime continuous supply while drastically reducing utility electricity bills. With <strong className="text-slate-100">DSP-based design, high MPPT efficiency, and comprehensive industrial protections</strong>, this UPS is the perfect foundational power infrastructure for modern industries.
           </p>
         </div>
 
         {/* KEY FEATURES */}
         <div>
-          <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+          <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
             KEY FEATURES
           </h3>
           <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-10"></div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-x-12 gap-y-10">
             {features.map((feat, idx) => (
-              <div key={idx} className="flex items-start gap-5 border-b border-slate-100 pb-8 group">
-                <div className="w-16 h-16 rounded-2xl bg-gradient-to-br from-blue-50 to-emerald-50 border border-slate-200/80 flex items-center justify-center flex-shrink-0 text-emerald-600 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-white group-hover:border-emerald-500">
+              <div key={idx} className="flex items-start gap-5 border-b border-slate-800/80 pb-8 group">
+                <div className="w-16 h-16 rounded-2xl bg-slate-900 border border-slate-800 flex items-center justify-center flex-shrink-0 text-emerald-400 shadow-sm transition-all duration-300 group-hover:scale-110 group-hover:bg-emerald-500 group-hover:text-slate-950 group-hover:border-emerald-500">
                   {feat.icon}
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-lg mb-1 group-hover:text-emerald-600 transition-colors">
+                  <h4 className="font-bold text-white text-lg mb-1 group-hover:text-emerald-400 transition-colors">
                     {feat.title}
                   </h4>
-                  <p className="text-slate-600 text-sm leading-relaxed m-0">
+                  <p className="text-slate-400 text-sm leading-relaxed m-0">
                     {feat.description}
                   </p>
                 </div>
@@ -492,15 +492,15 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
             {/* Seamless Transfer Accent Feature (Matching Screenshot 4) */}
             {seamlessTransfer && (
-              <div className="flex items-start gap-5 border-b border-slate-100 pb-8 group md:col-span-2 bg-emerald-50/40 p-6 rounded-md border border-emerald-200/60">
-                <div className="w-16 h-16 rounded-md bg-emerald-500 text-white flex items-center justify-center flex-shrink-0 shadow-md">
+              <div className="flex items-start gap-5 border-b border-slate-800/80 pb-8 group md:col-span-2 bg-emerald-950/30 p-6 rounded-md border border-emerald-500/30">
+                <div className="w-16 h-16 rounded-md bg-emerald-500 text-slate-950 flex items-center justify-center flex-shrink-0 shadow-md">
                   <RefreshCw size={28} className="animate-spin-slow" />
                 </div>
                 <div>
-                  <h4 className="font-bold text-slate-900 text-lg mb-1 text-emerald-800">
+                  <h4 className="font-bold text-emerald-400 text-lg mb-1">
                     Seamless Transfer Architecture
                   </h4>
-                  <p className="text-slate-700 text-sm leading-relaxed m-0">
+                  <p className="text-slate-300 text-sm leading-relaxed m-0">
                     {seamlessTransfer}
                   </p>
                 </div>
@@ -511,21 +511,21 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       </section>
 
       {/* Section 4: 2-Column Grid (Why Choose Synergy Systems & How It Works) */}
-      <section className="bg-slate-50 py-20 px-6 border-t border-slate-200/60">
+      <section className="bg-slate-900/40 py-20 px-6 border-t border-slate-800/80">
         <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
           {/* Left: WHY CHOOSE SYNERGY SYSTEMS */}
           <div>
-            <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+            <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
               WHY CHOOSE SYNERGY SYSTEMS?
             </h3>
             <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
 
             <ul className="space-y-4 list-none p-0 m-0">
               {whyChoose.map((item, index) => (
-                <li key={index} className="flex items-start gap-3 text-slate-700 text-base">
+                <li key={index} className="flex items-start gap-3 text-slate-300 text-base">
                   <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
                   <p className="m-0 leading-relaxed">
-                    <strong className="text-slate-900 font-bold">{item.title}: </strong>
+                    <strong className="text-white font-bold">{item.title}: </strong>
                     {item.description}
                   </p>
                 </li>
@@ -535,17 +535,17 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
           {/* Right: HOW IT WORKS */}
           <div>
-            <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+            <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
               HOW IT WORKS
             </h3>
             <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
 
             <ul className="space-y-4 list-none p-0 m-0">
               {howItWorks.map((step, idx) => (
-                <li key={idx} className="flex items-start gap-3 text-slate-700 text-base">
+                <li key={idx} className="flex items-start gap-3 text-slate-300 text-base">
                   <span className="w-2 h-2 rounded-full bg-amber-500 mt-2 flex-shrink-0"></span>
                   <p className="m-0 leading-relaxed">
-                    <strong className="text-slate-900 font-bold">{step.title} – </strong>
+                    <strong className="text-white font-bold">{step.title} – </strong>
                     {step.description}
                   </p>
                 </li>
@@ -555,20 +555,20 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
         </div>
 
         {/* Applications & Environmental Compliance Grid */}
-        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20 pt-16 border-t border-slate-200">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16 mt-20 pt-16 border-t border-slate-800">
           {/* Left: APPLICATIONS */}
           <div>
-            <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+            <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
               APPLICATIONS
             </h3>
             <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
 
             <ul className="space-y-4 list-none p-0 m-0">
               {applications.map((app, index) => (
-                <li key={index} className="flex items-start gap-3 text-slate-700 text-base">
-                  <span className="w-2 h-2 rounded-full bg-blue-600 mt-2 flex-shrink-0"></span>
+                <li key={index} className="flex items-start gap-3 text-slate-300 text-base">
+                  <span className="w-2 h-2 rounded-full bg-blue-500 mt-2 flex-shrink-0"></span>
                   <p className="m-0 leading-relaxed">
-                    <strong className="text-slate-900 font-bold">{app.title} – </strong>
+                    <strong className="text-white font-bold">{app.title} – </strong>
                     {app.description}
                   </p>
                 </li>
@@ -578,17 +578,17 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
           {/* Right: ENVIRONMENTAL & COMPLIANCE */}
           <div>
-            <h3 className="text-xl md:text-2xl font-black uppercase text-slate-900 tracking-wider mb-2">
+            <h3 className="text-xl md:text-2xl font-black uppercase text-white tracking-wider mb-2">
               ENVIRONMENTAL & COMPLIANCE
             </h3>
             <div className="w-16 h-1.5 bg-emerald-500 rounded-full mb-8"></div>
 
             <ul className="space-y-4 list-none p-0 m-0">
               {environmental.map((env, index) => (
-                <li key={index} className="flex items-start gap-3 text-slate-700 text-base">
-                  <span className="w-2 h-2 rounded-full bg-emerald-600 mt-2 flex-shrink-0"></span>
+                <li key={index} className="flex items-start gap-3 text-slate-300 text-base">
+                  <span className="w-2 h-2 rounded-full bg-emerald-500 mt-2 flex-shrink-0"></span>
                   <p className="m-0 leading-relaxed">
-                    <strong className="text-slate-900 font-bold">{env.title}: </strong>
+                    <strong className="text-white font-bold">{env.title}: </strong>
                     {env.description}
                   </p>
                 </li>

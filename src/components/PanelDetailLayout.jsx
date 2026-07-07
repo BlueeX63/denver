@@ -125,7 +125,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
   };
 
   return (
-    <div className="bg-white min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-800">
+    <div className="bg-slate-950 min-h-screen font-outfit selection:bg-emerald-500 selection:text-white relative overflow-x-hidden text-slate-100">
       
       {/* Downloading Toast */}
       {downloadingToast && (
@@ -141,7 +141,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
       {/* Quick Quote Modal */}
       {showQuoteModal && (
         <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-md transition-opacity animate-fadeIn text-left font-outfit">
-          <div className="bg-white rounded-md max-w-md w-full p-0 shadow-2xl relative border border-slate-300 overflow-visible transform transition-all">
+          <div className="bg-slate-900 rounded-md max-w-md w-full p-0 shadow-2xl relative border border-slate-800 overflow-visible transform transition-all text-slate-100">
             <div className="bg-[#072d1a] px-6 py-4 text-white flex justify-between items-center rounded-t-md border-b border-emerald-500/30">
               <div className="flex items-center gap-2 text-[#FBAE17] font-bold text-xs tracking-wider uppercase">
                 <Sparkles size={15} />
@@ -155,18 +155,18 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               </button>
             </div>
 
-            <div className="p-6 md:p-8 bg-white rounded-b-md">
+            <div className="p-6 md:p-8 bg-slate-900 rounded-b-md">
               {submitted ? (
-                <div className="py-8 text-center flex flex-col items-center justify-center bg-white">
-                  <div className="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mb-3 shadow-sm">
+                <div className="py-8 text-center flex flex-col items-center justify-center bg-slate-900">
+                  <div className="w-14 h-14 bg-emerald-500/20 text-emerald-400 rounded-full flex items-center justify-center mb-3 shadow-sm">
                     <CheckCircle2 size={32} />
                   </div>
-                  <h3 className="text-xl font-bold text-slate-900 mb-1 mt-0">Request Received!</h3>
-                  <p className="text-slate-600 text-xs leading-relaxed max-w-xs m-0 mx-auto">Our engineering team will analyze your requirements and reach out shortly.</p>
+                  <h3 className="text-xl font-bold text-white mb-1 mt-0">Request Received!</h3>
+                  <p className="text-slate-300 text-xs leading-relaxed max-w-xs m-0 mx-auto">Our engineering team will analyze your requirements and reach out shortly.</p>
                 </div>
               ) : (
                 <>
-                  <h3 className="text-xl md:text-2xl font-black text-slate-900 mb-6 mt-0 tracking-tight">Request Factory Estimate</h3>
+                  <h3 className="text-xl md:text-2xl font-black text-white mb-6 mt-0 tracking-tight">Request Factory Estimate</h3>
 
                   <form onSubmit={handleQuoteSubmit} className="space-y-4">
                     <div>
@@ -176,7 +176,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Your Name *"
                         value={formData.name}
                         onChange={(e) => setFormData({...formData, name: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                     </div>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -186,7 +186,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Email Address *"
                         value={formData.email}
                         onChange={(e) => setFormData({...formData, email: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                       <input 
                         type="tel" 
@@ -194,7 +194,7 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Phone Number *"
                         value={formData.phone}
                         onChange={(e) => setFormData({...formData, phone: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm"
                       />
                     </div>
 
@@ -202,14 +202,14 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                     <div className="relative">
                       <div 
                         onClick={() => setCustomSelectOpen(!customSelectOpen)}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 bg-white text-slate-900 text-sm font-medium shadow-sm flex items-center justify-between cursor-pointer hover:border-emerald-600 transition-colors select-none"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 bg-slate-950 text-slate-100 text-sm font-medium shadow-sm flex items-center justify-between cursor-pointer hover:border-emerald-500 transition-colors select-none"
                       >
                         <span>{formData.capacity || title || 'Select System Category'}</span>
-                        <ChevronDown size={16} className={`text-slate-500 transition-transform duration-200 ${customSelectOpen ? 'rotate-180 text-emerald-600' : ''}`} />
+                        <ChevronDown size={16} className={`text-slate-400 transition-transform duration-200 ${customSelectOpen ? 'rotate-180 text-emerald-400' : ''}`} />
                       </div>
 
                       {customSelectOpen && (
-                        <div className="absolute left-0 right-0 top-full mt-1 bg-white border border-slate-200 rounded-md shadow-2xl z-[70] overflow-hidden py-1.5 animate-fadeIn">
+                        <div className="absolute left-0 right-0 top-full mt-1 bg-slate-900 border border-slate-700 rounded-md shadow-2xl z-[70] overflow-hidden py-1.5 animate-fadeIn">
                           {[title, 'LT / PCC / MCC Panels', 'Draw Out Panels', 'Bus Duct & APFC', 'Industrial Battery Charger', 'Solar Structure'].map((opt, oIdx) => (
                             <div 
                               key={oIdx}
@@ -217,10 +217,10 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                                 setFormData({...formData, capacity: opt});
                                 setCustomSelectOpen(false);
                               }}
-                              className={`px-4 py-2.5 text-sm cursor-pointer transition-colors flex items-center justify-between select-none ${formData.capacity === opt ? 'bg-emerald-50 text-emerald-700 font-bold' : 'text-slate-700 font-medium hover:bg-slate-50'}`}
+                              className={`px-4 py-2.5 text-sm cursor-pointer transition-colors flex items-center justify-between select-none ${formData.capacity === opt ? 'bg-emerald-500/20 text-emerald-400 font-bold' : 'text-slate-300 font-medium hover:bg-slate-800'}`}
                             >
                               <span>{opt}</span>
-                              {formData.capacity === opt && <CheckCircle2 size={15} className="text-emerald-600" />}
+                              {formData.capacity === opt && <CheckCircle2 size={15} className="text-emerald-400" />}
                             </div>
                           ))}
                         </div>
@@ -233,12 +233,12 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
                         placeholder="Project Details / City Location (optional)"
                         value={formData.message}
                         onChange={(e) => setFormData({...formData, message: e.target.value})}
-                        className="w-full px-4 py-3 rounded-md border border-slate-300 focus:outline-none focus:border-emerald-600 text-slate-900 bg-white placeholder:text-slate-400 text-sm font-medium shadow-sm resize-none"
+                        className="w-full px-4 py-3 rounded-md border border-slate-700 focus:outline-none focus:border-emerald-500 text-slate-100 bg-slate-950 placeholder:text-slate-500 text-sm font-medium shadow-sm resize-none"
                       ></textarea>
                     </div>
 
                     {errorMsg && (
-                      <div className="p-3 bg-red-50 text-red-700 border border-red-200 rounded-md text-sm font-semibold">
+                      <div className="p-3 bg-red-950/50 text-red-400 border border-red-800 rounded-md text-sm font-semibold">
                         {errorMsg}
                       </div>
                     )}
@@ -288,19 +288,19 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
       {/* Section 1: Intro Headline + Visual Showcase */}
       <section className="relative z-30 max-w-7xl mx-auto px-6 py-16 md:py-20 -mt-10">
-        <div className="bg-white rounded-md p-8 md:p-12 shadow-[0_20px_50px_rgba(0,0,0,0.1)] border border-slate-200 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div className="bg-slate-900 rounded-xl p-8 md:p-12 shadow-2xl border border-slate-800 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           <div className="lg:col-span-6 space-y-6">
-            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-50 border border-emerald-200 text-emerald-800 text-xs font-bold tracking-wider uppercase">
-              <Factory size={14} className="text-emerald-600" />
+            <div className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full bg-emerald-500/10 border border-emerald-500/30 text-emerald-400 text-xs font-bold tracking-wider uppercase">
+              <Factory size={14} className="text-emerald-400" />
               <span>CPRI & IEC Certified Standard</span>
             </div>
             
-            <h2 className="text-3xl md:text-4xl font-black text-slate-900 tracking-tight leading-tight m-0">
+            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight leading-tight m-0">
               Engineered for Industrial Safety & Longevity
             </h2>
             
-            <p className="text-slate-600 text-base md:text-lg leading-relaxed m-0">
+            <p className="text-slate-300 text-base md:text-lg leading-relaxed m-0">
               {intro}
             </p>
 
@@ -315,9 +315,9 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
               
               <button 
                 onClick={handleDownloadBrochure}
-                className="px-6 py-4 bg-slate-100 hover:bg-slate-200 text-slate-800 font-bold text-sm uppercase tracking-wider rounded-md transition-all flex items-center gap-2 border border-slate-300 cursor-pointer"
+                className="px-6 py-4 bg-slate-800 hover:bg-slate-700 text-white font-bold text-sm uppercase tracking-wider rounded-md transition-all flex items-center gap-2 border border-slate-700 cursor-pointer"
               >
-                <Download size={16} className="text-emerald-600" />
+                <Download size={16} className="text-emerald-400" />
                 <span>Datasheet PDF</span>
               </button>
             </div>
@@ -398,21 +398,21 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
         
         {/* Specs Table */}
         <div className="lg:col-span-7 space-y-6">
-          <div className="flex items-center gap-2 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider">
             <Sliders size={16} />
             <span>Technical Datasheet</span>
           </div>
-          <h3 className="text-2xl md:text-3xl font-black text-slate-900 m-0 tracking-tight">
+          <h3 className="text-2xl md:text-3xl font-black text-white m-0 tracking-tight">
             System Rating & Parameters
           </h3>
 
-          <div className="border border-slate-300 rounded-md overflow-hidden shadow-sm">
+          <div className="border border-slate-800 bg-slate-900 rounded-md overflow-hidden shadow-sm">
             <table className="w-full text-left border-collapse m-0">
               <tbody>
                 {specifications && specifications.map((spec, sIdx) => (
-                  <tr key={sIdx} className={sIdx % 2 === 0 ? 'bg-slate-50' : 'bg-white'}>
-                    <td className="py-4 px-6 font-bold text-slate-700 text-sm border-b border-slate-200 w-1/3 uppercase tracking-wider">{spec.label}</td>
-                    <td className="py-4 px-6 font-semibold text-slate-900 text-sm border-b border-slate-200">{spec.value}</td>
+                  <tr key={sIdx} className={sIdx % 2 === 0 ? 'bg-slate-900/50' : 'bg-slate-900'}>
+                    <td className="py-4 px-6 font-bold text-slate-300 text-sm border-b border-slate-800 w-1/3 uppercase tracking-wider">{spec.label}</td>
+                    <td className="py-4 px-6 font-semibold text-white text-sm border-b border-slate-800">{spec.value}</td>
                   </tr>
                 ))}
               </tbody>
@@ -422,23 +422,23 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
         {/* Features Cards Grid */}
         <div className="lg:col-span-5 space-y-6">
-          <div className="flex items-center gap-2 text-emerald-700 font-bold text-xs uppercase tracking-wider">
+          <div className="flex items-center gap-2 text-emerald-400 font-bold text-xs uppercase tracking-wider">
             <Award size={16} />
             <span>Key Advantages</span>
           </div>
-          <h3 className="text-2xl md:text-3xl font-black text-slate-900 m-0 tracking-tight">
+          <h3 className="text-2xl md:text-3xl font-black text-white m-0 tracking-tight">
             Core Design Advantages
           </h3>
 
           <div className="grid grid-cols-1 gap-4">
             {features && features.map((feat, fIdx) => (
-              <div key={fIdx} className="p-5 rounded-md bg-white border border-slate-200 shadow-sm hover:border-emerald-600 transition-colors flex items-start gap-4">
-                <div className="p-2.5 rounded bg-emerald-50 text-emerald-600 mt-0.5">
+              <div key={fIdx} className="p-5 rounded-md bg-slate-900 border border-slate-800 shadow-sm hover:border-emerald-500 transition-colors flex items-start gap-4">
+                <div className="p-2.5 rounded bg-emerald-500/10 text-emerald-400 mt-0.5">
                   <CheckCircle2 size={20} />
                 </div>
                 <div>
-                  <h4 className="text-base font-bold text-slate-900 m-0 mb-1">{feat.title}</h4>
-                  <p className="text-xs text-slate-600 m-0 leading-relaxed">{feat.desc}</p>
+                  <h4 className="text-base font-bold text-white m-0 mb-1">{feat.title}</h4>
+                  <p className="text-xs text-slate-400 m-0 leading-relaxed">{feat.desc}</p>
                 </div>
               </div>
             ))}
@@ -449,20 +449,20 @@ table { border-collapse: collapse; margin-top: 25px; width: 100%; box-shadow: 0 
 
       {/* Section 4: Applications Sector Banner */}
       {applications && (
-        <section className="bg-slate-50 border-y border-slate-200 py-16">
+        <section className="bg-slate-900/40 border-y border-slate-800/80 py-16">
           <div className="max-w-7xl mx-auto px-6 space-y-10">
             <div className="text-center max-w-2xl mx-auto space-y-3">
-              <span className="text-xs font-bold text-emerald-700 uppercase tracking-wider block">Target Deployment Sectors</span>
-              <h3 className="text-2xl md:text-4xl font-black text-slate-900 m-0 tracking-tight">Mission-Critical Industry Applications</h3>
+              <span className="text-xs font-bold text-emerald-400 uppercase tracking-wider block">Target Deployment Sectors</span>
+              <h3 className="text-2xl md:text-4xl font-black text-white m-0 tracking-tight">Mission-Critical Industry Applications</h3>
             </div>
 
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               {applications.map((app, aIdx) => (
-                <div key={aIdx} className="bg-white p-6 rounded-md border border-slate-200 shadow-sm text-center flex flex-col items-center justify-center space-y-3 hover:border-emerald-600 transition-all hover:-translate-y-1">
+                <div key={aIdx} className="bg-slate-900 p-6 rounded-md border border-slate-800 shadow-sm text-center flex flex-col items-center justify-center space-y-3 hover:border-emerald-500 transition-all hover:-translate-y-1">
                   <div className="w-12 h-12 rounded-full bg-[#072d1a] text-[#FBAE17] flex items-center justify-center">
                     <Building2 size={24} />
                   </div>
-                  <span className="font-bold text-slate-900 text-sm md:text-base">{app}</span>
+                  <span className="font-bold text-white text-sm md:text-base">{app}</span>
                 </div>
               ))}
             </div>
