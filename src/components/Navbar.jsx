@@ -178,6 +178,7 @@ export default function Navbar() {
                                 </div>
                                 {renderProductsDropdown()}
                             </li>
+                            <li>{renderNavLink('/career', 'Careers')}</li>
                             <li>{renderNavLink('/contact', 'Contact Us')}</li>
                         </ul>
                     </div>
@@ -253,6 +254,7 @@ export default function Navbar() {
                                 )}
                             </div>
 
+                            <Link to="/career" onClick={() => setOpen(false)} className={`py-3 px-3 rounded-lg text-sm font-semibold no-underline transition-colors ${pathname === '/career' ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5'}`}>Careers</Link>
                             <Link to="/contact" onClick={() => setOpen(false)} className={`py-3 px-3 rounded-lg text-sm font-semibold no-underline transition-colors ${pathname === '/contact' ? 'text-emerald-400 bg-emerald-500/10' : 'text-white hover:bg-white/5'}`}>Contact Us</Link>
                         </div>
 

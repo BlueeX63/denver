@@ -151,52 +151,6 @@ export default function About() {
         </div>
       </section>
 
-      {/* Visionary Leadership & Founder Section */}
-      <section className="bg-gradient-to-b from-slate-900 to-slate-950 text-white py-24 border-t border-slate-800 relative overflow-hidden">
-        <div className="absolute right-0 top-1/2 -translate-y-1/2 w-96 h-96 bg-emerald-500/10 rounded-full blur-3xl pointer-events-none"></div>
-        <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center relative z-10">
-          <div className="lg:col-span-5 relative">
-            <div className="aspect-[3/4] max-w-sm mx-auto rounded-xl overflow-hidden bg-slate-800 border border-emerald-500/30 shadow-[0_25px_50px_-12px_rgba(0,0,0,0.8)] relative group">
-              <img 
-                src="/photos/founder.JPG" 
-                alt="Synergy Systems Founder & Managing Director" 
-                className="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-105"
-              />
-              <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/20 to-transparent opacity-90"></div>
-              <div className="absolute bottom-6 left-6 right-6 text-left space-y-1">
-                <span className="text-emerald-400 font-bold text-xs uppercase tracking-widest block">Managing Director & Founder</span>
-                <span className="text-2xl font-black text-white block">Visionary Leadership</span>
-                <p className="text-xs text-slate-300 m-0 pt-1 font-light">Architecting comprehensive power infrastructure across India.</p>
-              </div>
-            </div>
-          </div>
-          <div className="lg:col-span-7 space-y-6 text-left">
-            <div className="flex items-center gap-2">
-              <span className="w-8 h-[2px] bg-[#FBAE17]"></span>
-              <span className="text-xs font-black uppercase tracking-widest text-[#FBAE17]">Guiding Principle & Foundation</span>
-            </div>
-            <h2 className="text-3xl md:text-5xl font-black text-white m-0 tracking-tight">
-              Driven By Engineering Mastery & Uncompromising Integrity
-            </h2>
-            <p className="text-slate-300 text-base md:text-lg leading-relaxed m-0 font-light">
-              Established in 1990, Synergy Systems has grown into one of India's trusted manufacturers of Power Conditioning Equipment, Electrical Distribution Systems, and Industrial Automation Solutions.
-            </p>
-            <p className="text-slate-300 text-sm md:text-base leading-relaxed m-0">
-              With an uncompromising dedication to CPRI type-tested dielectric safety, zero-millisecond UPS redundancy, and severe-weather solar structural engineering, our founder instilled a corporate standard where reliability is never compromised. Every panel, charger, and power system is built to sustain critical plant loads for decades.
-            </p>
-            <div className="pt-4 grid grid-cols-1 sm:grid-cols-2 gap-6 border-t border-slate-800/80">
-              <div className="border-l-2 border-emerald-500 pl-4 space-y-1 mt-4">
-                <span className="text-2xl font-black text-white block">35+ Years</span>
-                <span className="text-xs text-slate-400 uppercase font-medium block">Manufacturing Excellence</span>
-              </div>
-              <div className="border-l-2 border-[#FBAE17] pl-4 space-y-1 mt-4">
-                <span className="text-2xl font-black text-white block">50+</span>
-                <span className="text-xs text-slate-400 uppercase font-medium block">Dedicated Professionals</span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* Milestones Section */}
       <section className="bg-white py-24 border-t border-slate-200">

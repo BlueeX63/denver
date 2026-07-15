@@ -2,6 +2,9 @@ import express from 'express';
 import cors from 'cors';
 import nodemailer from 'nodemailer';
 import dotenv from 'dotenv';
+import multer from 'multer';
+
+const upload = multer({ storage: multer.memoryStorage() });
 
 dotenv.config();
 
@@ -64,6 +67,57 @@ ${message || 'N/A'}
   } catch (error) {
     console.error('Error sending email:', error);
     res.status(500).json({ error: 'Failed to send email.' });
+  }
+});
+
+// POST endpoint for career applications
+app.post('/api/career', upload.single('resume'), async (req, res) => {
+  try {
+    const { name, email, phone, position, message, source = 'Careers Page' } = req.body;
+
+    if (!name || !email || !req.file) {
+      return res.status(400).json({ error: 'Name, email, and resume are required.' });
+    }
+
+    const mailOptions = {
+      from: `"${name}" <${process.env.SMTP_USER}>`,
+      replyTo: email,
+      to: process.env.RECEIVER_EMAIL,
+      subject: `New Job Application (${source}) - ${name}`,
+      text: `
+You have a new job application from the Synergyelectra website:
+
+Source: ${source}
+Name: ${name}
+Email: ${email}
+Phone: ${phone || 'N/A'}
+Position Applied For: ${position || 'N/A'}
+Message: 
+${message || 'N/A'}
+      `,
+      html: `
+        <h3>New Job Application from Synergyelectra Website</h3>
+        <p><strong>Source:</strong> ${source}</p>
+        <p><strong>Name:</strong> ${name}</p>
+        <p><strong>Email:</strong> <a href="mailto:${email}">${email}</a></p>
+        <p><strong>Phone:</strong> ${phone || 'N/A'}</p>
+        <p><strong>Position Applied For:</strong> ${position || 'N/A'}</p>
+        <p><strong>Message:</strong></p>
+        <blockquote>${message || 'N/A'}</blockquote>
+      `,
+      attachments: [
+        {
+          filename: req.file.originalname,
+          content: req.file.buffer
+        }
+      ]
+    };
+
+    await transporter.sendMail(mailOptions);
+    res.status(200).json({ success: true, message: 'Application sent successfully!' });
+  } catch (error) {
+    console.error('Error sending application:', error);
+    res.status(500).json({ error: 'Failed to send application.' });
   }
 });
 

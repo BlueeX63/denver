@@ -9,6 +9,7 @@ import './App.css';
 import Service from './pages/Service';
 import Contact from './pages/Contact';
 import Blog from './pages/Blog';
+import Career from './pages/Career';
 
 import SolarUPS from './pages/SolarUPS'; // Updated Solar UPS Category
 import Panels from './pages/Panels';
@@ -65,6 +66,7 @@ function ScrollRoutes() {
         <Route path="/about" element={<About />} />
         <Route path="/service" element={<Service />} />
         <Route path="/blog" element={<Blog />} />
+        <Route path="/career" element={<Career />} />
         <Route path="/contact" element={<Contact />} />
         
         <Route path="/solar-ups" element={<SolarUPS />} />
